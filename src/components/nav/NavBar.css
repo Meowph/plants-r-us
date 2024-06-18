@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   flex-wrap: nowrap;
   background-color: var(--dark);
@@ -26,4 +26,4 @@
 
 .navbar-link:hover {
   color: var(--primary);
-}
+} */

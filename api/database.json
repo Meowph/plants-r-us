@@ -57,14 +57,14 @@
       "id": 4,
       "name": "Morels",
       "description": "This small and unique mushroom is a highly sought after ingredient for many dishes. With a hollow stem and cap, this fungi is great for it's anti-oxidative abilities, anti-inflammation, and gut health preservation. While it is edible, it must be cooked before eaten.",
-      "location": "",
+      "location": "More prevalent in high elevation counties",
       "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FzqpDdny1pABhk8JgWnWTLkq8fwciJCeWrEekZbxlszuBlHSh5Tc0wvoCW85ZRuCeiY&usqp=CAU"
     },
     {
       "id": 5,
       "name": "Serviceberries",
       "description": "The tree that these berries grow on can be found while hiking, or even around your neighborhood library. With smooth, gray bark, star-shaped white flowers,and small red berries, this sweet treat is sought after as a healthy snack or added to sweet treats. It is great to have on hand for it's notable iron amounts. ",
-      "location": "",
+      "location": "Every county",
       "URL": "https://images.squarespace-cdn.com/content/v1/55fc413fe4b051db9c8fd36a/1545597479577-QBAS7HIX8OBAZKWOMLLM/service-4.JPG"
     }
   ],
