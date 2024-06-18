@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Login } from './components/auth/Login.jsx'
 import { Authorized } from './views/Authorized.jsx'
 import { ApplicationViews } from './views/ApplicationViews.jsx'
+import { Register } from './components/auth/Register.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <Routes> 
       <Route path="/login" element={<Login />}/>
+      <Route path="/register" element={<Register />} />
 
       <Route
         path='*'

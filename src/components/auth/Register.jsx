@@ -52,10 +52,10 @@ export const Register = (props) => {
         <h1 style ={{
             textDecorationLine: "underline"
           }}>
-            <strong>Please Register</strong>
+           Please Register
           </h1>
-          <h3>"Why did the flower decide to try out Tinder?
-          They were just looking for somebudy to love"</h3>
+          <p>("Why did the flower decide to try out Tinder?
+          They were just looking for somebudy to love!")</p>
         <fieldset>
           <div className="form-group">
             <input

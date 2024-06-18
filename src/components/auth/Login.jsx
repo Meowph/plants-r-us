@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Register } from "./Register.jsx"
 import "./Login.css"
 import { getUserByEmail } from "../../services/userService,jsx"
@@ -20,7 +20,6 @@ export const Login = () => {
           "activeUser",
           JSON.stringify({
             id: user.id,
-            isStaff: user.isStaff,
           })
         )
 
@@ -38,9 +37,9 @@ export const Login = () => {
           <h1 style ={{
             textDecorationLine: "underline"
           }}>
-            <strong>Welcome Back!</strong>
+           Welcome Back!
           </h1>
-          <h3>Haven't eaten weird have you?</h3>
+          <p>(Haven't eaten anything weird lately... have you?)</p>
           <fieldset>
             <div className="form-group">
               <input
@@ -64,8 +63,7 @@ export const Login = () => {
         </form>
       </section>
       <section>
-        <h2>Not a Member Yet? Lets fix that!</h2>
-        <Register />
+      <Link className="register-link" to="/register">Not a member yet? Lets fix that!</Link>
       </section>
     </main>
   )
