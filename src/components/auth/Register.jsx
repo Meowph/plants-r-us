@@ -6,8 +6,7 @@ import "./Login.css"
 export const Register = (props) => {
   const [user, setUser] = useState({
     email: "",
-    fullName: "",
-    isStaff: false,
+    username: "",
   })
   let navigate = useNavigate()
 
@@ -17,8 +16,7 @@ export const Register = (props) => {
         localStorage.setItem(
           "activeUser",
           JSON.stringify({
-            id: createdUser.id,
-            staff: createdUser.isStaff,
+            id: createdUser.id
           })
         )
 
@@ -61,7 +59,7 @@ export const Register = (props) => {
             <input
               onChange={updateUser}
               type="text"
-              id="fullName"
+              id="username"
               className="form-control"
               placeholder="Enter your username"
               required

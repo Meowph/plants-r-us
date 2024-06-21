@@ -9,8 +9,14 @@ export const AddPlantToProfile = (userSafePlant) => {
   })}
 
   export const getUserProfile = (userId) => {
-    return fetch(`http://localhost:8088/users/${userId}?`).then((res) => res.json())}
+    return fetch(`http://localhost:8088/users/${userId}`).then((res) => res.json())
+  }
 
+    
   export const getUserSafePlants = () => {
-    return fetch ("http://localhost:8088/userSafePlants?_expand=safePlants").then((res) => res.json())
+    return fetch ('http://localhost:8088/userSafePlants?_expand=safePlant').then((res) => res.json())
+  }
+
+  export const getUserSafeId = (userId) => {
+    return fetch (`http://localhost:8088/userSafePlants?userId=${userId}`).then((res) => res.json())
   }

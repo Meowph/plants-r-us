@@ -25,7 +25,7 @@ export const SafePlant = ({ plant, user }) => {
     event.preventDefault()
     const plantToPost= {
       userId: user.id,
-      safeId: plant.id,
+      safePlantId: plant.id,
       notes: " "
     }
       AddPlantToProfile(plantToPost).then(() => {

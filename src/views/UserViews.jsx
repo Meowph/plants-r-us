@@ -42,11 +42,11 @@ export const CustomerViews = ({ currentUser }) => {
                         element={<MessageList currentUser={currentUser} />}
                     />
       </Route>
-      <Route path="profile">
+      {/* <Route path="profile">
                     <Route index
-                        element={<ProfileList currentUser={currentUser} />}
+                        element={<Profile currentUser={currentUser} />}
                     />
-      </Route>
+      </Route> */}
       </Route>
   </Routes>
   )

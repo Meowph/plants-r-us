@@ -27,7 +27,7 @@
     },
     {
       "id": 6,
-      "username": "vRoot",
+      "username": "berryB",
       "email": "barry@gmail.com"
     }
   ],
@@ -108,57 +108,39 @@
   "userSafePlants": [
     {
       "id": 1,
-      "userId": "",
-      "safeId": "",
+      "userId": 4,
+      "safePlantId": 3,
       "notes": ""
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 2
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 3
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 4
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 5
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 6
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 7
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 8
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 9
     }
   ],
   "userDeadlyPlants": [
