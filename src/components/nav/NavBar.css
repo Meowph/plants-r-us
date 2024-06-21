@@ -27,3 +27,8 @@
 .navbar-link:hover {
   color: var(--primary);
 } */
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+  }

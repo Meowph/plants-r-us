@@ -8,7 +8,7 @@ import {
 import { SafePlant } from "../safe/Safe.jsx";
 
 //Fetches and displays the list of safe plants w/corresponding IMG (URL)
-export const SafePlantsList = () => {
+export const SafePlantsList = ({currentUser}) => {
   const [allSafePlants, satAllSafePlants] = useState([])
   const [safeImg, setSafeImg] = useState([])
 
@@ -29,6 +29,7 @@ export const SafePlantsList = () => {
           <Col key={Obj.id}>
             <SafePlant 
             plant={Obj}
+            user={currentUser}
             key = {Obj.id}
              />
           </Col>

@@ -44,6 +44,8 @@ return (
       src={plant.URL}
       alt={plant.name}
       />
+
+      
        {/* <CardText style = {{
           marginTop:"2rem"
       }}>

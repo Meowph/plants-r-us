@@ -20,9 +20,16 @@ export const UserNav = (args) => {
     // expand
     // container='fluid'
     // fixed='top'>
-    <Nav tabs>
+    <Nav 
+    tabs
+    variant="top"
+    className="sticky-nav"
+    >
       <NavItem>
-        <NavLink href="/home" active>
+        <NavLink 
+        href="/home" 
+        active
+        src="">
         Plants-R-Us
         </NavLink>
       </NavItem>
