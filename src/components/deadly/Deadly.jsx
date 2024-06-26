@@ -1,63 +1,64 @@
-// import { useNavigate } from "react-router-dom"
 import { 
+  ButtonGroup,
+  Button,
   Card, 
   CardBody, 
   CardImg, 
-  CardText, 
-  CardTitle 
+  CardTitle, 
+  Row,
+  Col,
+  CardText
 } from "reactstrap"
 import "./Deadly.css"
+import { AddDeadlyPlantToProfile } from "../../services/profileService.jsx"
 
 // Displays individual Safe Plant details
-export const DeadlyPlant = ({ plant }) => {
+export const DeadlyPlant = ({ plant, currentUser }) => {
 
-  // const Navigate = useNavigate()
+  const handleAddClick = () => {
+    const deadlyPlantToPost= {
+      userId: currentUser.id,
+      deadlyPlantId: plant.id,
+      notes: " "
+    }
+      AddDeadlyPlantToProfile(deadlyPlantToPost)
+    }
+
   
 return (
-    <Card //style={{ 
-  //     width: '20rem',  
-  //     margin: '10px' 
-  //     }}
-      >
-      <CardBody className="body">
-      <CardTitle 
-      // style = {{
-      //     marginBottom:"2rem"
-      // }}
-      >
-      <p>Name:</p>{plant.name}
-      <br></br>
-      <p>Description:</p>{plant.description}
-      <br></br>
-      <p>Location:</p>{plant.location}
-      <br></br>
-      </CardTitle>
-      
+  <Row>
+    <Col >
+    <Card>
       {/*Displays pant image */} 
-       <CardImg className="deadlyPlant-img" 
-       /* style={{ 
-          height:'13rem',
-          width:'13rem',
-          alignItems:'center'
-      {/* }} */
-      variant="top" 
+      <CardImg className="deadlyPlant-img" 
       src={plant.URL}
       alt={plant.name}
       />
+      <CardBody className="body">
 
-      
-       {/* <CardText style = {{
-          marginTop:"2rem"
-      }}>
-          <a 
-          href=""
-          onClick={() =>{
-              Navigate(`/safe/${plant.id}`)}}
-          >
-              Details
-          </a>
-      </CardText>  */}
+      <CardTitle>
+      <p>Name:</p>
+      </CardTitle>
+      {plant.name}
+  
+      <CardText>
+      <p>Description:</p>{plant.description}
+      </CardText>
+      <CardText>
+      <p>Location:</p>{plant.location}
+      </CardText>
       </CardBody>
+      <ButtonGroup>
+          <Button
+            color="success"
+            outline
+            onClick={handleAddClick}
+          >
+            Add
+            </Button>
+            </ButtonGroup>
   </Card>
+  </Col>
+  </Row>
 )
 }

@@ -107,48 +107,60 @@
   ],
   "userSafePlants": [
     {
-      "id": 1,
-      "userId": 4,
-      "safePlantId": 3,
-      "notes": ""
-    },
-    {
       "userId": 4,
       "safePlantId": 1,
-      "notes": " ",
+      "notes": " tththt",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "safePlantId": 5,
+      "notes": " ererere",
       "id": 2
     },
     {
-      "userId": 4,
+      "userId": 6,
       "safePlantId": 1,
       "notes": " ",
       "id": 3
     },
     {
-      "userId": 4,
-      "safePlantId": 1,
+      "userId": 6,
+      "safePlantId": 3,
       "notes": " ",
       "id": 4
     },
     {
-      "userId": 4,
+      "userId": 6,
       "safePlantId": 1,
       "notes": " ",
       "id": 5
     },
     {
-      "userId": 4,
-      "safePlantId": 1,
+      "userId": 6,
+      "safePlantId": 2,
       "notes": " ",
       "id": 6
     }
   ],
   "userDeadlyPlants": [
     {
-      "id": 1,
-      "userId": "",
-      "safeId": "",
-      "notes": ""
+      "userId": 6,
+      "deadlyPlantId": 2,
+      "notes": " ",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "deadlyPlantId": 4,
+      "notes": " ",
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "deadlyPlantId": 2,
+      "notes": " ",
+      "id": 3
     }
   ],
   "messages": [
@@ -189,15 +201,7 @@
       "timestamp": "2024-06-19T01:25"
     }
   ],
-  "posts": [
-    {
-      "id": 1,
-      "userId": "",
-      "description": "",
-      "imageUrl": "",
-      "timestamp": ""
-    }
-  ],
+  "posts": [],
   "parks": [
     {
       "id": 1,
@@ -236,12 +240,5 @@
       "imageUrl": "https://www.naturallyamazing.com/americasparks/7231.jpg"
     }
   ],
-  "userParks": [
-    {
-      "id": 1,
-      "parkId": "",
-      "userId": "",
-      "hasVisited": ""
-    }
-  ]
+  "userParks": []
 }

@@ -8,7 +8,7 @@ import {
 import { DeadlyPlant } from "./Deadly.jsx";
 
 //Fetches and displays the list of safe plants w/corresponding IMG (URL)
-export const DeadlyPlantsList = () => {
+export const DeadlyPlantsList = ({ currentUser }) => {
   const [allDeadlyPlants, satAllDeadlyPlants] = useState([])
   const [deadlyImg, setDeadlyImg] = useState([])
 
@@ -29,6 +29,7 @@ export const DeadlyPlantsList = () => {
           <Col key={Obj.id}>
             <DeadlyPlant
             plant={Obj}
+            currentUser={currentUser}
             key = {Obj.id}
              />
           </Col>

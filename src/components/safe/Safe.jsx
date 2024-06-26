@@ -1,40 +1,27 @@
-import { useNavigate } from "react-router-dom"
 import { 
   Button,
   ButtonGroup,
     Card, 
     CardBody, 
-    CardImg, 
-    CardText, 
+    CardImg,
     CardTitle 
 } from "reactstrap"
 import "./Safe.css"
 import { AddPlantToProfile } from "../../services/profileService.jsx"
-import { useState } from "react"
-// import { Navigate } from "react-router-dom"
 
 // Displays individual Safe Plant details
 export const SafePlant = ({ plant, user }) => {
 
-  const [userSafePlants, setUserSafePlants] = useState({ })
-
-  const Navigate = useNavigate()
-  
-
-  const handleAddClick = (event) => {
-    event.preventDefault()
+  const handleAddClick = () => {
     const plantToPost= {
       userId: user.id,
       safePlantId: plant.id,
       notes: " "
     }
-      AddPlantToProfile(plantToPost).then(() => {
-        Navigate(`/profile/${user.id}`);
-      })
+      AddPlantToProfile(plantToPost)
+      //   Navigate(`/profile/${user.id}`);
     }
 
-
-    
   return (
       <Card>
           {/*Displays plant image */} 
@@ -49,7 +36,7 @@ export const SafePlant = ({ plant, user }) => {
         />
         <ButtonGroup>
           <Button
-            color="primary"
+            color="success"
             outline
             onClick={handleAddClick}
           >

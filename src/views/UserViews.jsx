@@ -5,7 +5,6 @@ import { SafePlantsList } from "../components/safe/SafeList.jsx"
 import { DeadlyPlantsList } from "../components/deadly/DeadlyList.jsx"
 import { Profile } from "../components/profile/Profile.jsx"
 import MessageList from "../components/messages/MessageList.jsx"
-import { ProfileList } from "../components/profile/ProfileList.jsx"
 
 
 export const CustomerViews = ({ currentUser }) => {
@@ -42,11 +41,6 @@ export const CustomerViews = ({ currentUser }) => {
                         element={<MessageList currentUser={currentUser} />}
                     />
       </Route>
-      {/* <Route path="profile">
-                    <Route index
-                        element={<Profile currentUser={currentUser} />}
-                    />
-      </Route> */}
       </Route>
   </Routes>
   )

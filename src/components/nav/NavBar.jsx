@@ -13,13 +13,12 @@ import "./NavBar.css"
 export const UserNav = (args) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const localPlantUser = localStorage.getItem("activeUser")
+  const plantUserObject = JSON.parse(localPlantUser)
+
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    // <main color='success'
-    // expand
-    // container='fluid'
-    // fixed='top'>
     <Nav 
     tabs
     variant="top"
@@ -43,7 +42,7 @@ export const UserNav = (args) => {
         </DropdownMenu>
       </Dropdown>
       <NavItem>
-        <NavLink href="/profile">Profile</NavLink>
+        <NavLink href={`/profile/${plantUserObject.id}`}>Profile</NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="/messages">Messages</NavLink>
@@ -60,6 +59,5 @@ export const UserNav = (args) => {
         </NavLink>
       </NavItem>
     </Nav>
-    // </main>
   );
 }

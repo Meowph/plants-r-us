@@ -13,12 +13,14 @@
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-edit-text": "^5.1.1",
     "react-router-dom": "^6.23.1",
     "reactstrap": "^9.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-edit-text": "^5.0.4",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
