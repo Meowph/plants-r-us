@@ -26,11 +26,10 @@ export const SafePlantsList = ({currentUser}) => {
       <h1>Safe Plant List</h1>
       <Row>
         {allSafePlants.map((Obj) => (
-          <Col key={Obj.id}>
+          <Col key={Obj.id} sm="6" style={{ marginBottom: '20px'}}>
             <SafePlant 
             plant={Obj}
             user={currentUser}
-            key = {Obj.id}
              />
           </Col>
         ))}

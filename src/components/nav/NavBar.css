@@ -31,4 +31,6 @@
 .sticky-nav {
     position: sticky;
     top: 0;
+    background-color: #ffffff;
+    border-radius: 50px;
   }

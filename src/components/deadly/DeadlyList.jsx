@@ -11,6 +11,12 @@ import { DeadlyPlant } from "./Deadly.jsx";
 export const DeadlyPlantsList = ({ currentUser }) => {
   const [allDeadlyPlants, satAllDeadlyPlants] = useState([])
   const [deadlyImg, setDeadlyImg] = useState([])
+  const [addedPlants, setAddedPlants] = useState([]);
+
+  const handleAddClick = (plantId) => {
+    addPlantToUserProfile(currentUser.id, plantId);
+    setAddedPlants((prev) => [...prev, plantId]);
+  };
 
 //Fetches and sorts through deadlyPlants array to get name and URL
   useEffect(() => {
@@ -22,20 +28,22 @@ export const DeadlyPlantsList = ({ currentUser }) => {
 
   return (
     <main>
-<Container>
-      <h1>Deadly Plant List</h1>
-      <Row>
-        {allDeadlyPlants.map((Obj) => (
-          <Col key={Obj.id}>
-            <DeadlyPlant
-            plant={Obj}
-            currentUser={currentUser}
-            key = {Obj.id}
-             />
-          </Col>
-        ))}
-      </Row>
-    </Container>
-</main>
-  )
-}
+      <Container>
+        <h1>Deadly Plant List</h1>
+        <Row>
+          {allDeadlyPlants.map((Obj) => (
+            <Col key={Obj.id} sm="6" style={{ marginBottom: '20px'}}>
+              <DeadlyPlant
+                plant={Obj}
+                currentUser={currentUser}
+                handleAddClick={handleAddClick}
+                isAdded={addedPlants.includes(Obj.id)}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </main>
+  );
+};
+

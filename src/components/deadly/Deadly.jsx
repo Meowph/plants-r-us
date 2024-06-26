@@ -25,40 +25,41 @@ export const DeadlyPlant = ({ plant, currentUser }) => {
     }
 
   
-return (
-  <Row>
-    <Col >
-    <Card>
-      {/*Displays pant image */} 
-      <CardImg className="deadlyPlant-img" 
-      src={plant.URL}
-      alt={plant.name}
-      />
-      <CardBody className="body">
-
-      <CardTitle>
-      <p>Name:</p>
-      </CardTitle>
-      {plant.name}
-  
-      <CardText>
-      <p>Description:</p>{plant.description}
-      </CardText>
-      <CardText>
-      <p>Location:</p>{plant.location}
-      </CardText>
-      </CardBody>
-      <ButtonGroup>
-          <Button
-            color="success"
-            outline
-            onClick={handleAddClick}
-          >
-            Add
-            </Button>
+    return (
+      <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '200px', minWidth: '200px' }}>
+        {/* Displays plant image */}
+        <Col md="4" style={{ padding: 0 }}>
+          <CardImg
+            className="deadlyPlant-img"
+            src={plant.URL}
+            alt={plant.name}
+            style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+          />
+        </Col>
+        <Col md="8" style={{ padding: 0 }}>
+          <CardBody className="body">
+            <CardText>
+              <p><b>Name:</b> {plant.name}</p>
+            </CardText>
+            <CardText>
+              <p><b>Description:</b> {plant.description}</p>
+            </CardText>
+            <CardText>
+              <p><b>Location:</b> {plant.location}</p>
+            </CardText>
+            <ButtonGroup>
+              <Button
+                color="success"
+                outline
+                onClick={handleAddClick}
+              >
+                Add
+              </Button>
             </ButtonGroup>
-  </Card>
-  </Col>
-  </Row>
-)
-}
+          </CardBody>
+        </Col>
+      </Card>
+    );
+  };
+  
+  
