@@ -29,7 +29,11 @@ export const DeadlyPlantsList = ({ currentUser }) => {
   return (
     <main>
       <Container>
-        <h1>Deadly Plant List</h1>
+        <h1  style={{
+        color:'white',
+        marginTop: '1rem',
+        marginBottom:'4rem'
+      }}>Deadly Plant List</h1>
         <Row>
           {allDeadlyPlants.map((Obj) => (
             <Col key={Obj.id} sm="6" style={{ marginBottom: '20px'}}>

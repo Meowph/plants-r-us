@@ -19,21 +19,31 @@ export const UserNav = (args) => {
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <Nav 
-    tabs
-    variant="top"
-    className="sticky-nav"
-    >
+    <Nav style={{
+      width: '100%',
+      zIndex: '1000'
+    }}
+    fixed 
+    fill 
+    variant="top" 
+    className="sticky-nav">
       <NavItem>
-        <NavLink 
-        href="/home" 
-        active
-        src="">
-        Plants-R-Us
+        <NavLink href="/home" active className="nav-link">
+          <img
+            src="../public/images/logo.jpeg"
+            alt="Fern Logo"
+            className="fern-logo"
+            style={{
+              height: '2rem',
+              width: '2rem',
+              marginRight: '5px'
+            }}
+          />
+          Plants-R-Us
         </NavLink>
       </NavItem>
       <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle color="dark"nav caret>
+        <DropdownToggle color="dark" nav caret>
           Which One?
         </DropdownToggle>
         <DropdownMenu>
@@ -42,22 +52,30 @@ export const UserNav = (args) => {
         </DropdownMenu>
       </Dropdown>
       <NavItem>
-        <NavLink href={`/profile/${plantUserObject.id}`}>Profile</NavLink>
+        <NavLink href={`/profile/${plantUserObject.id}`} className="nav-link">
+          Profile
+        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/messages">Messages</NavLink>
+        <NavLink href="/chat" className="nav-link">
+          Messages
+        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/posts">Posts</NavLink>
+        <NavLink href="/posts" className="nav-link">
+          Posts
+        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/parks">Parks</NavLink>
+        <NavLink href="/parks" className="nav-link">
+          Parks
+        </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/login">
+        <NavLink href="/login" className="nav-link">
           Logout
         </NavLink>
       </NavItem>
     </Nav>
   );
-}
+};

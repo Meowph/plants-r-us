@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react"
-import { AnotherPatchNote, PatchNote  } from "../../services/profileNoteService.jsx"
+import { AnotherPatchNote } from "../../services/profileNoteService.jsx"
 
 
-export const ProfileForm = ({plant}) => {
-  const [myPlant, setMyPlant] = useState({ })
-  const [noteIdToEdit, setNoteIdToEdit] = useState(0)
+export const DeadlyProfileForm = ({otherPlant}) => {
+
+  const [myOtherPlant, setMyOtherPlant] = useState({ })
+  const [noteIdToOtherEdit, setNoteIdToOtherEdit] = useState(0)
 
   useEffect(() => {
-    setMyPlant(plant);
-    console.log(plant)
+    setMyOtherPlant(otherPlant)
+    console.log(otherPlant)
   }, []);
 
  {/* Something to look at in the future...
@@ -24,12 +25,12 @@ export const ProfileForm = ({plant}) => {
   //Adds new note
   const handleSaveNote = (e) => {
     e.preventDefault()
-    PatchNote(myPlant?.notes, plant?.id).then(() => { setNoteIdToEdit(0) })
+    AnotherPatchNote(myOtherPlant?.notes, otherPlant?.id).then(() => { setNoteIdToOtherEdit(0)})
   };
 
   const handleAddNote = (e) => {
     e.preventDefault()
-    setNoteIdToEdit(0), setNoteIdToEdit(myPlant?.id)
+    setNoteIdToOtherEdit(0), setNoteIdToOtherEdit(myOtherPlant?.id) 
   }
 
 //() => {} anonymous function
@@ -38,16 +39,16 @@ export const ProfileForm = ({plant}) => {
     <div>
       <h2>Notes</h2>
 
-      {myPlant?.id === noteIdToEdit ? (
+      {myOtherPlant?.id === noteIdToOtherEdit ? (
         <form onSubmit={handleSaveNote}>
           <textarea
             name="notes"
             onChange={(e) => {
-              const plantCopy = { ...myPlant };
+              const plantCopy = { ...myOtherPlant };
               plantCopy.notes = e.target.value;
-              setMyPlant(plantCopy);
+              setMyOtherPlant(plantCopy);
             }}
-            value={myPlant?.notes}
+            value={myOtherPlant?.notes}
             required
           />
           <button type="submit">Save Note</button>
@@ -56,8 +57,8 @@ export const ProfileForm = ({plant}) => {
         <button onClick={handleAddNote}>Add Note</button>
       )}
       <div>
-        <div key={myPlant?.id}>
-          <p>{myPlant?.notes}</p>
+        <div key={myOtherPlant?.id}>
+          <p>{myOtherPlant?.notes}</p>
         </div>
       </div>
     </div>

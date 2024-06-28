@@ -13,7 +13,7 @@ export const AddNewNote = (newUserNote) => {
   })}
 
 export const UpdateNote = (updateUserNotes) => {
-  return fetch(`http://localhost:8088/userSafePlants/${updatedUserNotes.id}`, {
+  return fetch(`http://localhost:8088/userSafePlants/${updateUserNotes.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -39,12 +39,11 @@ export const UpdateNote = (updateUserNotes) => {
     
     })}
 
-    export const AnotherPatchNote = (myNote, userSafePlantId) => {
-      return fetch(`http://localhost:8088/userDeadlyPlants/${userSafePlantId}`, {
+    export const AnotherPatchNote = (myNote, userDeadlyPlantId) => {
+      return fetch(`http://localhost:8088/userDeadlyPlants/${userDeadlyPlantId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify( { notes: myNote } )
-      
       })}

@@ -23,7 +23,11 @@ export const SafePlantsList = ({currentUser}) => {
   return (
     <main>
 <Container>
-      <h1>Safe Plant List</h1>
+      <h1 style={{
+        color:'white',
+        marginTop: '1rem',
+        marginBottom:'4rem'
+      }}>Safe Plant List</h1>
       <Row>
         {allSafePlants.map((Obj) => (
           <Col key={Obj.id} sm="6" style={{ marginBottom: '20px'}}>

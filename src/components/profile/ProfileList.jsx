@@ -10,8 +10,12 @@ import {
   CardBody, 
   CardImg, 
   CardText, 
-  CardTitle } from "reactstrap"
-import { NoteForm } from "./ProfileForm.jsx"
+  CardTitle, 
+  Col, 
+  Row} from "reactstrap"
+import { ProfileForm } from "./ProfileForm.jsx"
+import "./Profile.css"
+import { DeadlyProfileForm } from "./DeadlyProfileForm.jsx"
 
 //child of profile.jsx... passing info onto this child by profileId
 export const ProfileList = ({ profileId }) => {
@@ -49,63 +53,78 @@ useEffect(() => {
     });
   };
 
+  // Function to confirm deletion
+  const confirmDelete = (id, isSafe) => {
+    const confirmMessage = isSafe
+      ? 'Are you sure you want to delete this Safe Plant from your profile?'
+      : 'Are you sure you want to delete this Deadly Plant from your profile?';
+
+    if (window.confirm(confirmMessage)) {
+      if (isSafe) {
+        handleSafeDelete(id);
+      } else {
+        handleDeadlyDelete(id);
+      }
+    }
+  };
+
   return (
-    <div className="userSafePlants-container">
+    <div className="userPlants-container">
+      <div className="plant-section">
         <h2>Safe Plants</h2>
-        <article className="userPlants">
-            {userSafeId.map(plantObj => {
-                return <Card>
+        <div className="plant-cards">
+          {userSafeId.map(plantObj => (
+            <Card className="plant-card" key={plantObj.id}>
+              <CardImg
+                src={plantObj?.safePlant?.URL}
+                alt={plantObj?.safePlant?.name}
+              />
+              <CardBody className="plant-card-body">
+                <CardTitle className="plant-card-title">
+                  <p><b>Name:</b> {plantObj?.safePlant?.name}</p>
+                </CardTitle>
+                <CardText className="plant-card-text">
+                  <p><b>Description:</b> {plantObj?.safePlant?.description}</p>
+                  <p><b>Location:</b> {plantObj?.safePlant?.location}</p>
+                </CardText>
 
-          <CardImg className="safePlant-img" 
-        src={plantObj?.safePlant?.URL}
-        alt={plantObj?.safePlant?.name}
-        style={{
-          height: 50,
-        }}
-        top
-        />
-        <CardBody className="body">
-        <CardTitle>
-        <p>Name:</p>{plantObj?.safePlant?.name}
-        </CardTitle>
-        <CardText>
-        <p>Description:</p>{plantObj?.safePlant?.description}
-        <p>Location:</p>{plantObj?.safePlant?.location}
-        </CardText> 
-          <NoteForm plant={plantObj} />
-            </CardBody>
-            <Button color="danger" onClick={() => handleSafeDelete(plantObj.id)}>Delete</Button>
-    </Card>
-            })}
-        </article> 
+                <ProfileForm plant={plantObj}/>
 
+                <Button color="danger" onClick={() => confirmDelete(plantObj.id, true)}>Delete</Button>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <div className="plant-section">
         <h2>Deadly Plants</h2>
-        <article className="userPlants">
-            {userDeadlyId.map(plantObj => {
-                return <Card>
+        <div className="plant-cards">
+          {userDeadlyId.map(plantObj => (
+            <Card className="plant-card" key={plantObj.id}>
+              <CardImg
+                src={plantObj?.deadlyPlant?.URL}
+                alt={plantObj?.deadlyPlant?.name}
+              />
+              <CardBody className="plant-card-body">
+                <CardTitle className="plant-card-title">
+                  <p><b>Name:</b> {plantObj?.deadlyPlant?.name}</p>
+                </CardTitle>
+                <CardText className="plant-card-text">
+                  <p><b>Description:</b> {plantObj?.deadlyPlant?.description}</p>
+                  <p><b>Location:</b> {plantObj?.deadlyPlant?.location}</p>
+                </CardText>
 
-          <CardImg className="deadlyPlant-img" 
-        src={plantObj?.deadlyPlant?.URL}
-        alt={plantObj?.deadlyPlant?.name}
-        style={{
-          height: 50,
-        }}
-        top
-        />
-        <CardBody className="body">
-        <CardTitle>
-        <p>Name:</p>{plantObj?.deadlyPlant?.name}
-        </CardTitle>
-        <CardText>
-        <p>Description:</p>{plantObj?.deadlyPlant?.description}
-        <p>Location:</p>{plantObj?.deadlyPlant?.location}
-        </CardText> 
-          <NoteForm plant={plantObj} />
-            </CardBody>
-            <Button color="danger" onClick={() => handleDeadlyDelete(plantObj.id)}>Delete</Button>
-    </Card>
-            })}
-        </article> 
+                <DeadlyProfileForm otherPlant={plantObj}/>
+
+                <Button color="danger" onClick={() => confirmDelete(plantObj.id, false)}>Delete</Button>
+              </CardBody>
+            </Card>
+          ))}
+        </div>
+      </div>
     </div>
-)
-}
+  );
+};
+
+//prop = param... {} of prop what is being called (info being used HAS to match)

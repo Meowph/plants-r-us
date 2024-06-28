@@ -18,7 +18,10 @@ export const Profile = () => {
 
   return (
     <div>
-      <h1>{user.username}'s Profile</h1>
+      <h1 style={{
+        textDecoration:'underline',
+        color: 'whitesmoke'
+      }}>{user.username}'s Profile</h1>
       <ProfileList profileId={profileId}/>
     </div>
   );
