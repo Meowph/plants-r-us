@@ -33,7 +33,7 @@ export const Home = () => {
       marginTop:'1rem',
       color:'white'
     }}
-    >Welcome To Plant's-R-Us</h1>
+    >Plant's-R-Us Hub</h1>
       <Stack gap={3} className="align-items-center justify-content-center min-vh-100">
         {/* First Stack */}
         <h2 style={{ textDecoration: 'underline', marginTop: '2rem', color: 'white' }}><b>Foraging Fun</b></h2>

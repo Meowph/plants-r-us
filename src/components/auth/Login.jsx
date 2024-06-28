@@ -40,7 +40,7 @@ export const Login = () => {
           }}
           />
           <h1>
-           Welcome Back!
+           Welcome Back to Plants-R-Us!
           </h1>
           <p>(Haven't eaten anything weird lately... have you?)</p>
           <fieldset>

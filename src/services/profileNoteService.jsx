@@ -12,8 +12,8 @@ export const AddNewNote = (newUserNote) => {
   
   })}
 
-export const UpdateNote = (updateUserNotes) => {
-  return fetch(`http://localhost:8088/userSafePlants/${updateUserNotes.id}`, {
+export const UpdateNote = (updatedUserNotes) => {
+  return fetch(`http://localhost:8088/userSafePlants/${updatedUserNotes.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",

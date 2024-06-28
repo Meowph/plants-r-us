@@ -5,8 +5,8 @@ import { SafePlantsList } from "../components/safe/SafeList.jsx"
 import { DeadlyPlantsList } from "../components/deadly/DeadlyList.jsx"
 import { Profile } from "../components/profile/Profile.jsx"
 import { ProfileForm } from "../components/profile/ProfileForm.jsx"
-// import { ChatForm } from "../components/chat/ChatForm.jsx"
-// import { Chat } from "../components/chat/Chat.jsx"
+import { ChatForm } from "../components/chat/ChatForm.jsx"
+import { Chat } from "../components/chat/Chat.jsx"
 
 
 export const CustomerViews = ({ currentUser }) => {
@@ -39,14 +39,14 @@ export const CustomerViews = ({ currentUser }) => {
 
       </Route>
 
-      {/* <Route path="/chat">
+<Route path="/chat">
           <Route index element={<Chat currentUser={currentUser} />} />
 
           <Route
             path=":chatId/ChatForm"
             element={<ChatForm currentUser={currentUser} />}
           />
-        </Route> */}
+        </Route>
       </Route>
   </Routes>
   )

@@ -4,17 +4,17 @@
   height: 400px;
   display: flex;
   flex-direction: column-reverse;
-  scrollbar-color: #Fe5401;
+  scrollbar-color: #01501b;
   margin: 10px;
   border-radius: 5px;
   width: 75%;
 }
 
 .button{
-  background-color: #Fe5401;
+  background-color: white;
   margin: 5px;
   border-radius: 5px;
-  color: white;
+  color: #01501b;
 }
 .message{
   border: 2px solid grey;
@@ -44,7 +44,7 @@ p{
 }
 
 .chat-button{
-  background-color: #Fe5401;
+  background-color: white;
   height: 35px;
   width: 50px;
   text-align: center;
@@ -53,6 +53,7 @@ p{
   margin-bottom: 5px;
   float: right;
   margin: 10px;
+  color: #01501b;
 }
 
 .edit{

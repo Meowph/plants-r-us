@@ -29,6 +29,16 @@
       "id": 6,
       "username": "berryB",
       "email": "barry@gmail.com"
+    },
+    {
+      "email": "bee@gmail.com",
+      "username": "button",
+      "id": 7
+    },
+    {
+      "email": "bp@gmail.com",
+      "username": "FCL113",
+      "id": 8
     }
   ],
   "safePlants": [
@@ -109,28 +119,28 @@
     {
       "userId": 4,
       "safePlantId": 5,
-      "notes": "hi",
+      "notes": "wow",
       "id": 2
     },
     {
-      "userId": 4,
+      "userId": 8,
       "safePlantId": 1,
-      "notes": " blurp",
+      "notes": " ",
       "id": 3
     }
   ],
   "userDeadlyPlants": [
     {
       "userId": 4,
-      "deadlyPlantId": 2,
-      "notes": "hello",
-      "id": 1
-    },
-    {
-      "userId": 4,
       "deadlyPlantId": 1,
       "notes": " wam",
       "id": 2
+    },
+    {
+      "userId": 8,
+      "deadlyPlantId": 2,
+      "notes": " ",
+      "id": 3
     }
   ],
   "messages": [
@@ -155,7 +165,7 @@
     {
       "id": 4,
       "userId": 1,
-      "text": "",
+      "text": "I need to touch grass...",
       "timestamp": "2024-01-28T17:01"
     },
     {
@@ -169,6 +179,11 @@
       "userId": 5,
       "text": "How did I get here?",
       "timestamp": "2024-06-19T01:25"
+    },
+    {
+      "id": 7,
+      "userId": 8,
+      "text": "did you mean to send that?"
     }
   ],
   "posts": [],
@@ -182,33 +197,34 @@
     {
       "id": 2,
       "name": "BlackWater Falls",
-      "description": "is named for the falls of the Blackwater River, whose amber-colored waters plunge five stories then twist and tumble through an eight-mile long gorge. The “black” water is a result of tannic acid from fallen hemlock and red spruce needles. Campers visiting the park can enjoy activities like hiking, biking, fishing and so much more.",
       "imageUrl": "https://wvstateparks.com/wp-content/uploads/2019/04/Summer_1-700x467.jpg"
     },
     {
       "id": 3,
       "name": "Greenbrier State Forest",
-      "description": "Located in the southeastern corner of the state, near the border of Virginia, Greenbrier State Forest encompasses 5,100 acres of forested, mountainous terrain. Perfect for campers who enjoy hitting the trails via bike or hike.",
       "imageUrl": "https://wvstateparks.com/wp-content/uploads/2017/03/AA_21B_6852694_2279178736_6.jpg"
     },
     {
       "id": 4,
       "name": "Little Beaver State Park",
-      "description": " At the center of the park is an 18-acre lake where anglers may fish year-round. Nearly 20 miles of trails challenge hikers, while picnic areas are perfect for family get-togethers and reunions.",
       "imageUrl": "https://champagne-tastes.com/wp-content/uploads/2022/06/little-beaver-small-12.jpg"
     },
     {
       "id": 5,
       "name": "Seneca State Forest",
-      "description": "Seneca State Forest is West Virginia's oldest and largest forest. Surrounded by nature in rugged Pocahontas County, Seneca offers peace and solitude for guests searching for a quiet getaway.",
       "imageUrl": "https://pocahontascountywv.com/wp-content/uploads/2021/04/Seneca-firetower-6.jpeg"
     },
     {
       "id": 6,
       "name": "Twine Falls",
-      "description": "Named after two waterfalls found on park grounds, Twin Falls offers nature lovers 3,776 acres of pure bliss to camp and play. Hike to waterfalls, bike the trails, shoot some hoops at the basketball court and much more at this state park.",
       "imageUrl": "https://www.naturallyamazing.com/americasparks/7231.jpg"
     }
   ],
-  "userParks": []
+  "counties": [
+    {
+      "id": ,
+      "name": " ",
+      "pardId":
+    },
+  ]
 }
