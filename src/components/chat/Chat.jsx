@@ -26,6 +26,8 @@ export const Chat = ({ currentUser }) => {
 
   return (
   <div>
+    <h1 style={{textDecoration:'underline', color: 'white', margin: '3rem 0 3rem', textShadow: '2px 2px 2px #befff0'}}>Welcome to Plant Chat!</h1>
+
     <div className="chat">
       <div className="chat-display">
         <div className="chat-box">
@@ -52,9 +54,10 @@ export const Chat = ({ currentUser }) => {
         </div>
       </div>
       <div>
-        <form>
+        <form className="send-message-box">
           <fieldset>
             <input
+            className="send-message-form"
               text="text"
               placeholder="What's on your mind?"
               onChange={(event) => {

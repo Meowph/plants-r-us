@@ -26,7 +26,8 @@ export const SafePlantsList = ({currentUser}) => {
       <h1 style={{
         color:'white',
         marginTop: '1rem',
-        marginBottom:'4rem'
+        marginBottom:'4rem',
+        textShadow: '2px 2px 2px #9bffe8'
       }}>Safe Plant List</h1>
       <Row>
         {allSafePlants.map((Obj) => (

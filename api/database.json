@@ -91,7 +91,7 @@
       "name": "Rhododendron",
       "description": "Growing up to 40 ft tall, this plant has dark green leaves, which are different shades on either side, surrounding clusters of 10-12 small white or pink flowers. Symptoms of leaf or honey consumption include hallucinations, diarrhea and death in severe cases.",
       "location": "Every county, but more prone to mountainous regions",
-      "URL": "https://greenbrierliving.com/wp-content/uploads/2008/06/rhododendron.jpg"
+      "URL": "https://www.statesymbolsusa.org/sites/default/files/primary-images/rhododendronWVstateflower.jpg"
     },
     {
       "id": 3,
@@ -127,6 +127,12 @@
       "safePlantId": 1,
       "notes": " ",
       "id": 3
+    },
+    {
+      "userId": 8,
+      "safePlantId": 2,
+      "notes": " ",
+      "id": 4
     }
   ],
   "userDeadlyPlants": [
@@ -141,6 +147,12 @@
       "deadlyPlantId": 2,
       "notes": " ",
       "id": 3
+    },
+    {
+      "userId": 8,
+      "deadlyPlantId": 1,
+      "notes": " ",
+      "id": 4
     }
   ],
   "messages": [
@@ -184,6 +196,10 @@
       "id": 7,
       "userId": 8,
       "text": "did you mean to send that?"
+    },
+    {
+      "id": 8,
+      "userId": 8
     }
   ],
   "posts": [],
@@ -222,9 +238,9 @@
   ],
   "counties": [
     {
-      "id": ,
-      "name": " ",
-      "pardId":
-    },
+      "id": 1,
+      "name": "Boone",
+      "parkId": 1
+    }
   ]
 }

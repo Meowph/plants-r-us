@@ -21,7 +21,8 @@ export const UserNav = (args) => {
   return (
     <Nav style={{
       width: '100%',
-      zIndex: '1000'
+      zIndex: '1000',
+      color: 'black'
     }}
     fixed 
     fill 
@@ -36,14 +37,15 @@ export const UserNav = (args) => {
             style={{
               height: '2rem',
               width: '2rem',
-              marginRight: '5px'
+              marginRight: '5px',
+              backgroundColor: 'pink'
             }}
           />
           Plants-R-Us
         </NavLink>
       </NavItem>
       <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle color="dark" nav caret>
+        <DropdownToggle nav caret>
           Which One?
         </DropdownToggle>
         <DropdownMenu>

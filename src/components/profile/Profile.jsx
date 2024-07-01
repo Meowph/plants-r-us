@@ -20,8 +20,10 @@ export const Profile = () => {
     <div>
       <h1 style={{
         textDecoration:'underline',
-        color: 'whitesmoke'
-      }}>{user.username}'s Profile</h1>
+        color: 'white',
+        margin: '3rem 0 3rem',
+        textShadow: '2px 2px 2px #9bffe8'
+      }}>Welcome To {user.username}'s Profile!</h1>
       <ProfileList profileId={profileId}/>
     </div>
   );

@@ -1,21 +1,35 @@
+/* WHOLE Chat Box */
 .chat-display{
-  border: 1px solid gray;
+  border: 2px solid #01501B;
   overflow-y: scroll;
   height: 400px;
   display: flex;
   flex-direction: column-reverse;
   scrollbar-color: #01501b;
-  margin: 10px;
+  margin: 60px 0 0 0;
   border-radius: 5px;
   width: 75%;
+  background: content-box radial-gradient( #aee9e3, #67A268);
 }
 
+/* Send Message Button */
 .button{
   background-color: white;
   margin: 5px;
   border-radius: 5px;
   color: #01501b;
 }
+
+.button :hover {
+  border-color: #01501B;
+}
+
+/* What's on your mind? form */
+.send-message-form {
+  margin: 0 20px 0 10px;
+  border: solid 1px#01501b;
+}
+/* Message Boxes*/
 .message{
   border: 2px solid grey;
   width: 75%;
@@ -25,6 +39,9 @@
   text-align: left;
   padding-left: 20px;
   align-self: center;
+  background: white;
+  color: #01501B;
+  box-shadow: 1px 1px 1px 1px;
 }
 
 p{
@@ -36,27 +53,41 @@ p{
   flex-direction: column;
   justify-content: center;
 }
+
 .chat{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  width: 55rem;
 }
 
+/* Edit Button */
 .chat-button{
   background-color: white;
   height: 35px;
   width: 50px;
   text-align: center;
-  padding: 5px;
+  padding: 3px;
   border-radius: 5px;
   margin-bottom: 5px;
   float: right;
   margin: 10px;
   color: #01501b;
+  box-shadow: 1px 1px 1px 1px;
 }
 
 .edit{
   width: 250px;
   height: 50px;
+}
+
+.form {
+  margin: 30px;
+}
+
+.send-message-box {
+  box-shadow: rgb(187, 243, 243) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }

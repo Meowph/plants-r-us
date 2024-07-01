@@ -1,45 +1,44 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import { 
   DeleteDeadlyPlant, 
   DeleteSafePlant, 
   getUserDeadlyPlants, 
-  getUserSafePlants } from "../../services/profileService.jsx"
+  getUserSafePlants 
+} from "../../services/profileService.jsx";
 import { 
   Button, 
+  ButtonGroup, 
   Card, 
   CardBody, 
   CardImg, 
   CardText, 
-  CardTitle, 
   Col, 
-  Row} from "reactstrap"
-import { ProfileForm } from "./ProfileForm.jsx"
-import "./Profile.css"
-import { DeadlyProfileForm } from "./DeadlyProfileForm.jsx"
+  Row 
+} from "reactstrap";
+import "./Profile.css";
 
-//child of profile.jsx... passing info onto this child by profileId
 export const ProfileList = ({ profileId }) => {
-  const [userPlants, setUserPlants] = useState([])
-  const [userSafeId, setUserSafeId]= useState([])
-  const [userDeadlyId, setUserDeadlyId]= useState([])
-  const [userDeadlyPlants, setUserDeadlyPlants] = useState([])
-  let profileIdNumber = parseInt(profileId)
+  const [userPlants, setUserPlants] = useState([]);
+  const [userSafeId, setUserSafeId]= useState([]);
+  const [userDeadlyId, setUserDeadlyId]= useState([]);
+  const [userDeadlyPlants, setUserDeadlyPlants] = useState([]);
+  let profileIdNumber = parseInt(profileId);
 
-useEffect(() => {
-  getUserSafePlants().then(userPlants => {
-      let myPlants = userPlants.filter(d => d.userId === profileIdNumber)
-      setUserPlants(userPlants)
-      setUserSafeId(myPlants)
-  })
-  }, [])
+  useEffect(() => {
+    getUserSafePlants().then(userPlants => {
+      let myPlants = userPlants.filter(d => d.userId === profileIdNumber);
+      setUserPlants(userPlants);
+      setUserSafeId(myPlants);
+    });
+  }, []);
 
   useEffect(() => {
     getUserDeadlyPlants().then(badPlants => {
-        let myDeadlyPlants = badPlants.filter(d => d.userId === profileIdNumber)
-        setUserDeadlyPlants(badPlants)
-        setUserDeadlyId(myDeadlyPlants)
-    })
-    }, [])
+      let myDeadlyPlants = badPlants.filter(d => d.userId === profileIdNumber);
+      setUserDeadlyPlants(badPlants);
+      setUserDeadlyId(myDeadlyPlants);
+    });
+  }, []);
 
   const handleSafeDelete = (plantId) => {
     DeleteSafePlant(plantId).then(() => {
@@ -48,12 +47,11 @@ useEffect(() => {
   };
 
   const handleDeadlyDelete = (plantId) => {
-   DeleteDeadlyPlant(plantId).then(() => {
-    setUserDeadlyId(userDeadlyId.filter(plant => plant.id !== plantId));
+    DeleteDeadlyPlant(plantId).then(() => {
+      setUserDeadlyId(userDeadlyId.filter(plant => plant.id !== plantId));
     });
   };
 
-  // Function to confirm deletion
   const confirmDelete = (id, isSafe) => {
     const confirmMessage = isSafe
       ? 'Are you sure you want to delete this Safe Plant from your profile?'
@@ -71,60 +69,98 @@ useEffect(() => {
   return (
     <div className="userPlants-container">
       <div className="plant-section">
-        <h2>Safe Plants</h2>
-        <div className="plant-cards">
+        <h2 style={{ border: 'thick double, green', margin: '30px', padding: '15px', background: '#fff5f6'}}>Safe Plants</h2>
+        <Row className="plant-cards">
           {userSafeId.map(plantObj => (
-            <Card className="plant-card" key={plantObj.id}>
-              <CardImg
-                src={plantObj?.safePlant?.URL}
-                alt={plantObj?.safePlant?.name}
-              />
-              <CardBody className="plant-card-body">
-                <CardTitle className="plant-card-title">
-                  <p><b>Name:</b> {plantObj?.safePlant?.name}</p>
-                </CardTitle>
-                <CardText className="plant-card-text">
-                  <p><b>Description:</b> {plantObj?.safePlant?.description}</p>
-                  <p><b>Location:</b> {plantObj?.safePlant?.location}</p>
-                </CardText>
-
-                <ProfileForm plant={plantObj}/>
-
-                <Button color="danger" onClick={() => confirmDelete(plantObj.id, true)}>Delete</Button>
-              </CardBody>
-            </Card>
+            <Col xs="12" md="6" key={plantObj.id}>
+              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px', backgroundColor: '#fdf9f3', marginBottom: '5rem' }}>
+                <Col md="4" style={{ padding: 0 }}>
+                  <CardImg
+                    className="safePlant-img"
+                    src={plantObj?.safePlant?.URL}
+                    alt={plantObj?.safePlant?.name}
+                    style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                  />
+                </Col>
+                <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
+                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ flex: 1 }}>
+                      <CardText>
+                        <p><b>Name:</b> {plantObj?.safePlant?.name}</p>
+                      </CardText>
+                      <CardText>
+                        <p><b>Description:</b> {plantObj?.safePlant?.description}</p>
+                      </CardText>
+                      <CardText>
+                        <p><b>Location:</b> {plantObj?.safePlant?.location}</p>
+                      </CardText>
+                    </div>
+                    <div style={{ marginTop: 'auto' }}>
+                      <ButtonGroup>
+                        <Button
+                          color="success"
+                          outline
+                          onClick={() => confirmDelete(plantObj.id, true)}
+                        >
+                          Delete
+                        </Button>
+                      </ButtonGroup>
+                    </div>
+                  </CardBody>
+                </Col>
+              </Card>
+            </Col>
           ))}
-        </div>
+        </Row>
       </div>
+          <br></br>
+          <p style={{ borderTop: '8px solid #bbb', borderRadius: '5px'}}></p>
 
       <div className="plant-section">
-        <h2>Deadly Plants</h2>
-        <div className="plant-cards">
+        <h2 style={{ border: 'thick double, green', margin: '5rem 0 60px', padding: '15px',  background: '#fff5f6'}}>Deadly Plants</h2>
+        <Row className="plant-cards">
           {userDeadlyId.map(plantObj => (
-            <Card className="plant-card" key={plantObj.id}>
-              <CardImg
-                src={plantObj?.deadlyPlant?.URL}
-                alt={plantObj?.deadlyPlant?.name}
-              />
-              <CardBody className="plant-card-body">
-                <CardTitle className="plant-card-title">
-                  <p><b>Name:</b> {plantObj?.deadlyPlant?.name}</p>
-                </CardTitle>
-                <CardText className="plant-card-text">
-                  <p><b>Description:</b> {plantObj?.deadlyPlant?.description}</p>
-                  <p><b>Location:</b> {plantObj?.deadlyPlant?.location}</p>
-                </CardText>
-
-                <DeadlyProfileForm otherPlant={plantObj}/>
-
-                <Button color="danger" onClick={() => confirmDelete(plantObj.id, false)}>Delete</Button>
-              </CardBody>
-            </Card>
+            <Col xs="12" md="6" key={plantObj.id}>
+              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px',  backgroundColor: '#fdf9f3'}}>
+                <Col md="4" style={{ padding: 0 }}>
+                  <CardImg
+                    className="deadlyPlant-img"
+                    src={plantObj?.deadlyPlant?.URL}
+                    alt={plantObj?.deadlyPlant?.name}
+                    style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                  />
+                </Col>
+                <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
+                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column'}}>
+                    <div style={{ flex: 1 }}>
+                      <CardText>
+                        <p><b>Name:</b> {plantObj?.deadlyPlant?.name}</p>
+                      </CardText>
+                      <CardText>
+                        <p><b>Description:</b> {plantObj?.deadlyPlant?.description}</p>
+                      </CardText>
+                      <CardText>
+                        <p><b>Location:</b> {plantObj?.deadlyPlant?.location}</p>
+                      </CardText>
+                    </div>
+                    <div style={{ marginTop: 'auto' }}>
+                      <ButtonGroup>
+                        <Button
+                          color="success"
+                          outline
+                          onClick={() => confirmDelete(plantObj.id, false)}
+                        >
+                          Delete
+                        </Button>
+                      </ButtonGroup>
+                    </div>
+                  </CardBody>
+                </Col>
+              </Card>
+            </Col>
           ))}
-        </div>
+        </Row>
       </div>
     </div>
   );
 };
-
-//prop = param... {} of prop what is being called (info being used HAS to match)

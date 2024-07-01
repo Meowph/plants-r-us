@@ -31,7 +31,7 @@ export const ChatForm = () => {
 
 
   return (
-    <form>
+    <form className="form">
       <h2>Edit Chat</h2>
       <fieldset>
         <input
