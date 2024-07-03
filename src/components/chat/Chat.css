@@ -129,10 +129,14 @@ p{
 .edit{
   width: 250px;
   height: 50px;
+  margin-bottom: 20px;
 }
 
 .form {
   margin: 30px;
+  box-shadow: rgb(164, 229, 229) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background-color: white;
+  padding-bottom: 10px;
 }
 
 .send-message-box {

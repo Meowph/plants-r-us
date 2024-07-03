@@ -151,6 +151,12 @@
       "safePlantId": 2,
       "notes": " ",
       "id": 4
+    },
+    {
+      "userId": 7,
+      "safePlantId": 1,
+      "notes": " so good!",
+      "id": 5
     }
   ],
   "userDeadlyPlants": [
@@ -159,6 +165,12 @@
       "deadlyPlantId": 1,
       "notes": "hello",
       "id": 2
+    },
+    {
+      "userId": 7,
+      "deadlyPlantId": 1,
+      "notes": " ",
+      "id": 3
     }
   ],
   "messages": [
@@ -226,6 +238,16 @@
       "text": "Wood sorrel is too good...",
       "timestamp": "2024-06-18T17:24"
     },
+    {
+      "userId": 8,
+      "text": "oh my...",
+      "id": 10,
+      "user": {
+        "email": "test@gmail.com",
+        "username": "test",
+        "id": 8
+      }
+    }
   ],
   "posts": [],
   "parks": [
