@@ -26,7 +26,13 @@ export const Chat = ({ currentUser }) => {
 
   return (
   <div>
-    <h1 style={{textDecoration:'underline', color: 'white', margin: '3rem 0 3rem', textShadow: '2px 2px 2px #befff0'}}>Welcome to Plant Chat!</h1>
+    <h1 style={{
+      textDecoration:'underline', 
+      color: 'white', margin: '3rem 0 3rem', 
+      textShadow: '2px 2px 2px #befff0', 
+      fontSize: '45px'
+      }}
+      >Welcome to Plant Chat!</h1>
 
     <div className="chat">
       <div className="chat-display">

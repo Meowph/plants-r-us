@@ -25,10 +25,12 @@ export const SafePlantsList = ({currentUser}) => {
 <Container>
       <h1 style={{
         color:'white',
-        marginTop: '1rem',
+        marginTop: '2rem',
         marginBottom:'4rem',
-        textShadow: '2px 2px 2px #9bffe8'
-      }}>Safe Plant List</h1>
+        textShadow: '2px 2px 2px #9bffe8',
+        fontSize: '45px',
+        textDecoration: 'underline'
+      }}>Edible List</h1>
       <Row>
         {allSafePlants.map((Obj) => (
           <Col key={Obj.id} sm="6" style={{ marginBottom: '20px'}}>

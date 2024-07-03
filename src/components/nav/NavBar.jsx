@@ -22,59 +22,75 @@ export const UserNav = (args) => {
     <Nav style={{
       width: '100%',
       zIndex: '1000',
-      color: 'black'
     }}
     fixed 
     fill 
     variant="top" 
     className="sticky-nav">
       <NavItem>
-        <NavLink href="/home" active className="nav-link">
+        <NavLink href="/home" active className="nav-link" style={{
+          color: 'black'
+        }}>
           <img
-            src="../public/images/logo.jpeg"
+            src="../images/logo.jpeg"
             alt="Fern Logo"
             className="fern-logo"
             style={{
               height: '2rem',
               width: '2rem',
               marginRight: '5px',
-              backgroundColor: 'pink'
             }}
           />
           Plants-R-Us
         </NavLink>
       </NavItem>
       <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle nav caret>
+        <DropdownToggle nav caret style={{
+          color: 'black',
+        }}>
           Which One?
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem href="/safe">Safe Plants</DropdownItem>
-          <DropdownItem href="/deadly">Deadly Plants</DropdownItem>
+          <DropdownItem href="/safe" style={{
+          color: 'black',
+        }}>Safe Plants</DropdownItem>
+          <DropdownItem href="/deadly" style={{
+          color: 'black',
+        }}>Deadly Plants</DropdownItem>
         </DropdownMenu>
       </Dropdown>
       <NavItem>
-        <NavLink href={`/profile/${plantUserObject.id}`} className="nav-link">
+        <NavLink href={`/profile/${plantUserObject.id}`} className="nav-link" style={{
+          color: 'black',
+        }}>
           Profile
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/chat" className="nav-link">
+        <NavLink href="/chat" className="nav-link" style={{
+          color: 'black',
+        }}>
           Messages
         </NavLink>
       </NavItem>
-      <NavItem>
-        <NavLink href="/posts" className="nav-link">
+      {/* <NavItem>
+        <NavLink href="/posts" className="nav-link" style={{
+          color: 'black',
+        }}>
           Posts
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="/parks" className="nav-link">
+        <NavLink href="/parks" className="nav-link" style={{
+          color: 'black',
+        }}>
           Parks
         </NavLink>
-      </NavItem>
+      </NavItem> */}
       <NavItem>
-        <NavLink href="/login" className="nav-link">
+        <NavLink href="/login" className="nav-link" style={{
+          color: 'black',
+        }}>
           Logout
         </NavLink>
       </NavItem>

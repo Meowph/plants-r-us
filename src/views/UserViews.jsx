@@ -7,6 +7,7 @@ import { Profile } from "../components/profile/Profile.jsx"
 import { ProfileForm } from "../components/profile/ProfileForm.jsx"
 import { ChatForm } from "../components/chat/ChatForm.jsx"
 import { Chat } from "../components/chat/Chat.jsx"
+import { Parks } from "../components/parks/Parks.jsx"
 
 
 export const CustomerViews = ({ currentUser }) => {
@@ -29,6 +30,7 @@ export const CustomerViews = ({ currentUser }) => {
                         element={<SafePlantsList currentUser={currentUser} />}
                     />
       </Route>
+
       <Route path="deadly">
                     <Route index
                         element={<DeadlyPlantsList currentUser={currentUser} />}
@@ -47,6 +49,13 @@ export const CustomerViews = ({ currentUser }) => {
             element={<ChatForm currentUser={currentUser} />}
           />
         </Route>
+
+        <Route path="parks">
+                    <Route index
+                        element={<Parks currentUser={currentUser} />}
+                    />
+      </Route>
+
       </Route>
   </Routes>
   )

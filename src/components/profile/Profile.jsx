@@ -21,8 +21,9 @@ export const Profile = () => {
       <h1 style={{
         textDecoration:'underline',
         color: 'white',
-        margin: '3rem 0 3rem',
-        textShadow: '2px 2px 2px #9bffe8'
+        margin: '3rem',
+        textShadow: '2px 2px 2px #9bffe8',
+        fontSize: '45px'
       }}>Welcome To {user.username}'s Profile!</h1>
       <ProfileList profileId={profileId}/>
     </div>

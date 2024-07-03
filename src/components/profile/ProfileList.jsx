@@ -16,6 +16,8 @@ import {
   Row 
 } from "reactstrap";
 import "./Profile.css";
+import { ProfileForm } from "./ProfileForm.jsx";
+import { DeadlyProfileForm } from "./DeadlyProfileForm.jsx";
 
 export const ProfileList = ({ profileId }) => {
   const [userPlants, setUserPlants] = useState([]);
@@ -69,11 +71,11 @@ export const ProfileList = ({ profileId }) => {
   return (
     <div className="userPlants-container">
       <div className="plant-section">
-        <h2 style={{ border: 'thick double, green', margin: '30px', padding: '15px', background: '#fff5f6'}}>Safe Plants</h2>
+        <h2 style={{ border: 'thick double, green', marginTop: '6rem', marginBottom: '3rem', padding: '15px', background: '#fff5f6'}}>Safe Plants</h2>
         <Row className="plant-cards">
           {userSafeId.map(plantObj => (
             <Col xs="12" md="6" key={plantObj.id}>
-              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px', backgroundColor: '#fdf9f3', marginBottom: '5rem' }}>
+              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px', marginBottom: '5rem' }}>
                 <Col md="4" style={{ padding: 0 }}>
                   <CardImg
                     className="safePlant-img"
@@ -83,7 +85,7 @@ export const ProfileList = ({ profileId }) => {
                   />
                 </Col>
                 <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
-                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3' }}>
                     <div style={{ flex: 1 }}>
                       <CardText>
                         <p><b>Name:</b> {plantObj?.safePlant?.name}</p>
@@ -94,8 +96,9 @@ export const ProfileList = ({ profileId }) => {
                       <CardText>
                         <p><b>Location:</b> {plantObj?.safePlant?.location}</p>
                       </CardText>
+                      <ProfileForm plant={plantObj}/>
                     </div>
-                    <div style={{ marginTop: 'auto' }}>
+                    <div style={{ marginTop: '2rem' }}>
                       <ButtonGroup>
                         <Button
                           color="success"
@@ -112,16 +115,17 @@ export const ProfileList = ({ profileId }) => {
             </Col>
           ))}
         </Row>
+        
       </div>
           <br></br>
-          <p style={{ borderTop: '8px solid #bbb', borderRadius: '5px'}}></p>
+          <p style={{ borderTop: '13px solid #619e85', borderRadius: '5px'}}></p>
 
       <div className="plant-section">
-        <h2 style={{ border: 'thick double, green', margin: '5rem 0 60px', padding: '15px',  background: '#fff5f6'}}>Deadly Plants</h2>
+        <h2 style={{ border: 'thick double, green',marginTop: '6rem', marginBottom: '3rem', padding: '15px',  background: '#fff5f6'}}>Deadly Plants</h2>
         <Row className="plant-cards">
           {userDeadlyId.map(plantObj => (
             <Col xs="12" md="6" key={plantObj.id}>
-              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px',  backgroundColor: '#fdf9f3'}}>
+              <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px'}}>
                 <Col md="4" style={{ padding: 0 }}>
                   <CardImg
                     className="deadlyPlant-img"
@@ -131,7 +135,7 @@ export const ProfileList = ({ profileId }) => {
                   />
                 </Col>
                 <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
-                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column'}}>
+                  <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3'}}>
                     <div style={{ flex: 1 }}>
                       <CardText>
                         <p><b>Name:</b> {plantObj?.deadlyPlant?.name}</p>
@@ -139,11 +143,12 @@ export const ProfileList = ({ profileId }) => {
                       <CardText>
                         <p><b>Description:</b> {plantObj?.deadlyPlant?.description}</p>
                       </CardText>
-                      <CardText>
+                      <CardText style={{marginBottom: '5px'}}>
                         <p><b>Location:</b> {plantObj?.deadlyPlant?.location}</p>
                       </CardText>
+                      <DeadlyProfileForm otherPlant={plantObj}/>
                     </div>
-                    <div style={{ marginTop: 'auto' }}>
+                    <div style={{ marginTop: '2rem' }}>
                       <ButtonGroup>
                         <Button
                           color="success"

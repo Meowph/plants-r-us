@@ -4,8 +4,18 @@
     background-color: #ffffff;
     border-radius: 50px;
     color: purple;
+    width: 200%;
+    z-index: 1000;
+    font-family: "Sansita Swashed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+  }
+
+  .nav-link {
+    color: black;
   }
   
-  .sticky-nav:hover {
+  .nav-link:hover {
     color: green; /* Change to desired hover color */
   }

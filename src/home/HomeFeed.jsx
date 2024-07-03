@@ -30,16 +30,19 @@ export const Home = () => {
   return (
     <>
     <h1 style={{
-      marginTop:'1rem',
+      margin:'3rem',
       color:'white',
-      textShadow: '2px 2px 2px #9bffe8'
+      textShadow: '2px 2px 2px #9bffe8',
+      fontSize: '45px',
+      textDecoration: 'underline'
     }}
-    >Plant's-R-Us Hub</h1>
+    className="home-feed"
+    >Plants-R-Us Hub</h1>
       <Stack gap={3} className="align-items-center justify-content-center min-vh-100">
         {/* First Stack */}
-        <h2 style={{ textDecoration: 'underline', marginTop: '2rem', color: 'white' }}><b>Foraging Fun</b></h2>
+        <h2 style={{ border: 'thick double, green', marginTop: '3rem', marginBottom:'2rem', padding: '15px', background: '#fff5f6', width: '100%'}}><b>Foraging Fun</b></h2>
         <Stack direction="horizontal" gap={3} className="justify-content-center">
-          <Button
+          <Button className="home-feed"
             style={{
               color: 'green',
               background: 'white',
@@ -88,7 +91,7 @@ export const Home = () => {
         </Stack>
 
         {/* Second Stack */}
-        <h2 style={{ textDecoration: 'underline', marginTop: '2rem', color: 'white' }}><b>Books For All Levels</b></h2>
+        <h2 style={{ border: 'thick double, green', marginTop: '7rem', marginBottom:'2rem', padding: '15px', background: '#fff5f6', width: '100%'}}><b>Books For All Levels</b></h2>
         <Stack direction="horizontal" gap={3} className="justify-content-center">
           <Button
             style={{
@@ -151,7 +154,7 @@ export const Home = () => {
         </Stack>
 
         {/* Third Stack */}
-        <h2 style={{ textDecoration: 'underline', marginTop: '2rem', color: 'white' }}><b>More Interesting Resources</b></h2>
+        <h2 style={{ border: 'thick double, green', marginTop: '7rem', marginBottom:'2rem', padding: '15px', background: '#fff5f6', width: '100%'}}><b>Extra Resources</b></h2>
         <Stack direction="horizontal" gap={3} className="justify-content-center">
           <Button
             style={{

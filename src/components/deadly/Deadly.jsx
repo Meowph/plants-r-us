@@ -3,9 +3,7 @@ import {
   Button,
   Card, 
   CardBody, 
-  CardImg, 
-  CardTitle, 
-  Row,
+  CardImg,
   Col,
   CardText
 } from "reactstrap"
@@ -36,7 +34,7 @@ export const DeadlyPlant = ({ plant, currentUser }) => {
           />
         </Col>
         <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
-          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3' }}>
             <div style={{ flex: 1 }}>
             <CardText>
               <p><b>Name:</b> {plant.name}</p>

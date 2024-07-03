@@ -29,53 +29,57 @@
       "id": 6,
       "username": "berryB",
       "email": "barry@gmail.com"
-    },
-    {
-      "email": "bee@gmail.com",
-      "username": "button",
-      "id": 7
-    },
-    {
-      "email": "bp@gmail.com",
-      "username": "FCL113",
-      "id": 8
     }
   ],
   "safePlants": [
     {
       "id": 1,
       "name": "Pawpaw",
-      "description": "The pawpaw tree has smooth gray bark, but becomes scaly overtime. Pawpaws grow in clusters that resemble bananas, are high in vitamin C and healthy fats, and can be eaten raw.",
+      "description": "The pawpaw tree has smooth gray bark, but becomes scaly overtime. Pawpaws grow in clusters that resemble bananas, are high in vitamin C and healthy fats, and can be eaten raw. They flourish from August through October.",
       "location": "All counties except in high elevations.",
       "URL": "https://growitbuildit.com/wp-content/uploads/2023/07/Pawpaw-cluster-2.jpg"
     },
     {
       "id": 2,
       "name": "Dandelion",
-      "description": "With long pointy leaves, and bright yellowish orange flowers, this planted is sought after as an addition to salads or for tea. It is Abundant in vitamin A, vitamin C, and vitamin K. As well as being known for maintaining good vision and immune function. ",
+      "description": "With long pointy leaves, and bright yellowish orange flowers, this planted is sought after as an addition to salads or for tea. It is Abundant in vitamin A, vitamin C, and vitamin K. As well as being known for maintaining good vision and immune function. They flourish from May to October.",
       "location": "Every county",
       "URL": "https://baynature.org/wp-content/uploads/2021/11/viridi-green-i-uBAOo_BBA-unsplash.jpg"
     },
     {
       "id": 3,
       "name": "Wood Sorrel",
-      "description": "Growing up to 10 inches tall, this heart-shaped leafleted, tiny yellow flowered, plant is a wonderful zesty treat. It is high an vitamin C and can help with nausea, fever, indigestion, and swelling.",
+      "description": "Growing up to 10 inches tall, this heart-shaped leafleted, tiny yellow flowered, plant is a wonderful zesty treat. It is high an vitamin C and can help with nausea, fever, indigestion, and swelling. They flourish from mid-June to mid-July.",
       "location": "Every county",
       "URL": "https://lh6.googleusercontent.com/proxy/WYV6CPsoxdn74HJV85x0vEfSGtv8Px_vZ4W3EhLXPxa1JR899MXgh0cZ6hYJ--iNU7vXMs1QG_oycTPq5agb0GTrxjuMCmCTooWYCCQ1YFoZlht_CvoMCRHBEJ7aoelLej0"
     },
     {
       "id": 4,
       "name": "Morels",
-      "description": "This small and unique mushroom is a highly sought after ingredient for many dishes. With a hollow stem and cap, this fungi is great for it's anti-oxidative abilities, anti-inflammation, and gut health preservation. While it is edible, it must be cooked before eaten.",
+      "description": "This small and unique mushroom is a highly sought after ingredient for many dishes. With a hollow stem and cap, this fungi is great for it's anti-oxidative abilities, anti-inflammation, and gut health preservation. While it is edible, it must be cooked before eaten. They flourish from April through May.",
       "location": "More prevalent in high elevation counties",
       "URL": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/im_landscape_100/public/2023-04/morel-mushrooms.jpg.webp?itok=erPDf-Zw"
     },
     {
       "id": 5,
       "name": "Serviceberries",
-      "description": "The tree that these berries grow on can be found while hiking, or even around your neighborhood library. With smooth, gray bark, star-shaped white flowers,and small red berries, this sweet treat is sought after as a healthy snack or added to sweet treats. It is great to have on hand for it's notable iron amounts. ",
+      "description": "The tree that these berries grow on can be found while hiking, or even around your neighborhood library. With smooth, gray bark, star-shaped white flowers,and small red berries, this sweet treat is sought after as a healthy snack or added to sweet treats. It is great to have on hand for it's notable iron amounts. They flourish in late June or July.",
       "location": "Every county",
       "URL": "https://images.squarespace-cdn.com/content/v1/55fc413fe4b051db9c8fd36a/1545597479577-QBAS7HIX8OBAZKWOMLLM/service-4.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Ramps",
+      "description": "This wild onion has broad and smooth, light green leaves that can grow to be 8 inches long. They have a strong garlicky-onion flavor and can be eaten raw. They are known for being delicious, as well as their anti-bacterial and antiviral qualities. They flourish from March to early May.",
+      "location": "Every county",
+      "URL": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-west-virginia-ramps-angela-lizotte.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Elderberries",
+      "description": "This delicious berry grows in the form of a clump-like shrub that ranges from 8 to 10 feet high. Only being edible once cooked, it is rich in vitamins, minerals and antioxidant compounds, while having anti-inflammatory and antibacterial properties. They flourish from August through September.",
+      "location": "Every county",
+      "URL": "https://www.coldclimategardening.com/wp-content/uploads/3861843057_e44f500f87_b.jpg"
     }
   ],
   "deadlyPlants": [
@@ -113,23 +117,37 @@
       "description": "Growing upwards of 20 ft, in a spiral fashion around trees, this vine and it's fruit are very similar to grapes. Every part of this plant is toxic and can inhibit muscle movement, as well as be fatal in severe cases.",
       "location": "Every county",
       "URL": "https://objects.liquidweb.services/images/202110/inat_1634001860-6164e873c6741.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Bulbous Buttercup",
+      "description": "Ranging in height from 6-12 inches, this flower brings back joyous childhood memories of. While not being listed as lethal to humans, it is still not safe to consume. If chewed, blisters would appear on the lips an face.. If swallowed, the symptoms are abdominal pain, diarrhea and vomiting, dizziness and even paralysis.",
+      "location": "Every county",
+      "URL": "https://warehouse1.indicia.org.uk/upload/14/63/80/o_1aj8snerp11m5kjtio3ds41nnpc.jpg"
+    },
+    {
+      "id": 7,
+      "name": "American Yew",
+      "description": "Growing from 3-5 feet tall, this shrub is toxic from the roots to the needles. Ingestion of any part of this plant can cause an altered mental status, blue-colored lips, breathing difficulty, Coma, convulsions, Diarrhea, dizziness and enlarged pupils.",
+      "location": "Every county",
+      "URL": "https://qph.cf2.quoracdn.net/main-qimg-bdb00b903877cb2a70124413c2f558f8"
     }
   ],
   "userSafePlants": [
     {
       "userId": 4,
       "safePlantId": 5,
-      "notes": "wow",
+      "notes": "wow!!",
       "id": 2
     },
     {
-      "userId": 8,
+      "userId": 4,
       "safePlantId": 1,
       "notes": " ",
       "id": 3
     },
     {
-      "userId": 8,
+      "userId": 9,
       "safePlantId": 2,
       "notes": " ",
       "id": 4
@@ -139,27 +157,15 @@
     {
       "userId": 4,
       "deadlyPlantId": 1,
-      "notes": " wam",
+      "notes": "hello",
       "id": 2
-    },
-    {
-      "userId": 8,
-      "deadlyPlantId": 2,
-      "notes": " ",
-      "id": 3
-    },
-    {
-      "userId": 8,
-      "deadlyPlantId": 1,
-      "notes": " ",
-      "id": 4
     }
   ],
   "messages": [
     {
       "id": 1,
       "userId": 2,
-      "text": "What's up plant lovers?",
+      "text": "What is up plant lovers?",
       "timestamp": "2024-06-18T17:24"
     },
     {
@@ -175,12 +181,6 @@
       "timestamp": "2024-05-13T11:12"
     },
     {
-      "id": 4,
-      "userId": 1,
-      "text": "I need to touch grass...",
-      "timestamp": "2024-01-28T17:01"
-    },
-    {
       "id": 5,
       "userId": 3,
       "text": "Anyone else see the disclaimer for the West Virginia Mushroom Club?...",
@@ -194,12 +194,23 @@
     },
     {
       "id": 7,
-      "userId": 8,
-      "text": "did you mean to send that?"
+      "userId": 4,
+      "text": "This hot weather... I can't!  :(",
+      "user": {
+        "id": 4,
+        "username": "bLeaf",
+        "email": "brooks@gmail.com"
+      }
     },
     {
+      "userId": 4,
+      "text": "Woah!",
       "id": 8,
-      "userId": 8
+      "user": {
+        "id": 4,
+        "username": "bLeaf",
+        "email": "brooks@gmail.com"
+      }
     }
   ],
   "posts": [],

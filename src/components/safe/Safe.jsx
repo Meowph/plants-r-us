@@ -35,7 +35,7 @@ export const SafePlant = ({ plant, user }) => {
           />
         </Col>
         <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
-          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3' }}>
             <div style={{ flex: 1 }}>
               <CardText>
                 <p><b>Name:</b> {plant.name}</p>

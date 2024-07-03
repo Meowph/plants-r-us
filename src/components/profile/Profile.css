@@ -70,6 +70,7 @@
   margin-top: 10px;
 } */}
 
+
 .plant-card-body {
   display: flex;
   flex-direction: column;
@@ -102,4 +103,14 @@
   border-radius: 8px;
   position: unset;
   bottom: 10px;
+}
+
+.safe-form {
+  padding: 10px 13px 10px 10px;
+  box-shadow: rgb(183, 240, 216) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.deadly-form {
+  padding: 10px 13px 10px 10px;
+  box-shadow: rgb(183, 240, 216) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }

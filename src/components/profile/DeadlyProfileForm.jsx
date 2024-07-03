@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { AnotherPatchNote } from "../../services/profileNoteService.jsx"
+import "./Profile.css"
 
 
 export const DeadlyProfileForm = ({otherPlant}) => {
@@ -37,12 +38,15 @@ export const DeadlyProfileForm = ({otherPlant}) => {
 
     return (
     <div>
-      <h2>Notes</h2>
+      <h4 style={{
+        marginTop: '10px'
+      }}>Notes:</h4>
 
       {myOtherPlant?.id === noteIdToOtherEdit ? (
-        <form onSubmit={handleSaveNote}>
+        <form className="deadly-form" onSubmit={handleSaveNote}>
           <textarea
             name="notes"
+            placeholder="Got something fun to add?..."
             onChange={(e) => {
               const plantCopy = { ...myOtherPlant };
               plantCopy.notes = e.target.value;

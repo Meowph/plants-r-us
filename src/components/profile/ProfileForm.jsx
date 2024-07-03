@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { AnotherPatchNote, PatchNote  } from "../../services/profileNoteService.jsx"
+import { PatchNote  } from "../../services/profileNoteService.jsx"
 
 
 export const ProfileForm = ({plant}) => {
@@ -9,7 +9,7 @@ export const ProfileForm = ({plant}) => {
   useEffect(() => {
     setMyPlant(plant);
     console.log(plant)
-  }, []);
+  }, [plant]);
 
  {/* Something to look at in the future...
 //  const handleControlledInput = (e) => {
@@ -24,7 +24,9 @@ export const ProfileForm = ({plant}) => {
   //Adds new note
   const handleSaveNote = (e) => {
     e.preventDefault()
-    PatchNote(myPlant?.notes, plant?.id).then(() => { setNoteIdToEdit(0) })
+    PatchNote(myPlant?.notes, myPlant?.id).then(() => { 
+      setNoteIdToEdit(0); 
+    })
   };
 
   const handleAddNote = (e) => {
@@ -36,12 +38,17 @@ export const ProfileForm = ({plant}) => {
 
     return (
     <div>
-      <h2>Notes</h2>
+      <h4>Notes:</h4>
+      <div>
+        <div key={myPlant?.id}>
+          <p>{myPlant?.notes}</p>
+        </div>
 
       {myPlant?.id === noteIdToEdit ? (
-        <form onSubmit={handleSaveNote}>
+        <form className="safe-form" onSubmit={(evt)=> {handleSaveNote(evt)}}>
           <textarea
             name="notes"
+            placeholder="Got something fun to add?..."
             onChange={(e) => {
               const plantCopy = { ...myPlant };
               plantCopy.notes = e.target.value;
@@ -53,12 +60,8 @@ export const ProfileForm = ({plant}) => {
           <button type="submit">Save Note</button>
         </form>
       ) : (
-        <button onClick={handleAddNote}>Add Note</button>
+        <button onClick={(evt) => {handleAddNote(evt)}}>Add Note</button>
       )}
-      <div>
-        <div key={myPlant?.id}>
-          <p>{myPlant?.notes}</p>
-        </div>
       </div>
     </div>
   );
