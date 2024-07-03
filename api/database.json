@@ -29,6 +29,26 @@
       "id": 6,
       "username": "berryB",
       "email": "barry@gmail.com"
+    },
+    {
+      "email": "test123@gmail.com",
+      "username": "test",
+      "id": 7
+    },
+    {
+      "email": "test@gmail.com",
+      "username": "test",
+      "id": 8
+    },
+    {
+      "email": "test2@gmail.com",
+      "username": "test2",
+      "id": 9
+    },
+    {
+      "email": "bee@gmail.com",
+      "username": "Abee",
+      "id": 10
     }
   ],
   "safePlants": [
@@ -147,16 +167,16 @@
       "id": 3
     },
     {
-      "userId": 9,
-      "safePlantId": 2,
-      "notes": " ",
-      "id": 4
-    },
-    {
       "userId": 7,
       "safePlantId": 1,
       "notes": " so good!",
       "id": 5
+    },
+    {
+      "userId": 9,
+      "safePlantId": 1,
+      "notes": " ",
+      "id": 6
     }
   ],
   "userDeadlyPlants": [
@@ -171,6 +191,12 @@
       "deadlyPlantId": 1,
       "notes": " ",
       "id": 3
+    },
+    {
+      "userId": 10,
+      "deadlyPlantId": 1,
+      "notes": " ",
+      "id": 4
     }
   ],
   "messages": [
@@ -246,6 +272,16 @@
         "email": "test@gmail.com",
         "username": "test",
         "id": 8
+      }
+    },
+    {
+      "userId": 10,
+      "text": ":)",
+      "id": 11,
+      "user": {
+        "email": "bee@gmail.com",
+        "username": "Abee",
+        "id": 10
       }
     }
   ],

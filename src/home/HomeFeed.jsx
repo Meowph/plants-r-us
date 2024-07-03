@@ -30,7 +30,7 @@ export const Home = () => {
   return (
     <>
     <h1 style={{
-      margin:'3rem',
+      marginTop:'3rem',
       color:'white',
       textShadow: '2px 2px 2px #9bffe8',
       fontSize: '45px',
@@ -38,6 +38,13 @@ export const Home = () => {
     }}
     className="home-feed"
     >Plants-R-Us Hub</h1>
+    <p style={{
+      marginBottom:'3rem',
+      color:'white',
+      textShadow: '2px 2px 2px #9bffe8',
+      fontSize: '22px',
+      textDecoration: 'underline'
+    }}>~For All Your Resource Needs~</p>
       <Stack gap={3} className="align-items-center justify-content-center min-vh-100">
         {/* First Stack */}
         <h2 style={{ border: 'thick double, green', marginTop: '3rem', marginBottom:'2rem', padding: '15px', background: '#fff5f6', width: '100%'}}><b>Foraging Fun</b></h2>
