@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "username": "tPetal",
+      "username": "tTree",
       "email": "tyler@gmail.com"
     },
     {
@@ -195,7 +195,7 @@
     {
       "id": 7,
       "userId": 4,
-      "text": "This hot weather... I can't!  :(",
+      "text": "This hot weather... I'm wilting!  ;(",
       "user": {
         "id": 4,
         "username": "bLeaf",
@@ -203,15 +203,29 @@
       }
     },
     {
-      "userId": 4,
-      "text": "Woah!",
+      "id": 7,
+      "userId": 3,
+      "text": "Did you see the post on silver vine?!",
+      "timestamp": "2024-05-13T11:12"
+    },
+    {
       "id": 8,
-      "user": {
-        "id": 4,
-        "username": "bLeaf",
-        "email": "brooks@gmail.com"
-      }
-    }
+      "userId": 6,
+      "text": "Can we just get rid of poison ivy?",
+      "timestamp": "2024-05-13T11:12"
+    },
+    {
+      "id": 9,
+      "userId": 5,
+      "text": "I don't remember where, but I did see that page!",
+      "timestamp": "2024-06-19T01:25"
+    },
+    {
+      "id": 1,
+      "userId": 2,
+      "text": "Wood sorrel is too good...",
+      "timestamp": "2024-06-18T17:24"
+    },
   ],
   "posts": [],
   "parks": [
