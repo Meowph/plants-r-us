@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "username": "tPetal",
+      "username": "tTree",
       "email": "tyler@gmail.com"
     },
     {
@@ -27,45 +27,79 @@
     },
     {
       "id": 6,
-      "username": "vRoot",
+      "username": "berryB",
       "email": "barry@gmail.com"
+    },
+    {
+      "email": "test123@gmail.com",
+      "username": "test",
+      "id": 7
+    },
+    {
+      "email": "test@gmail.com",
+      "username": "test",
+      "id": 8
+    },
+    {
+      "email": "test2@gmail.com",
+      "username": "test2",
+      "id": 9
+    },
+    {
+      "email": "bee@gmail.com",
+      "username": "Abee",
+      "id": 10
     }
   ],
   "safePlants": [
     {
       "id": 1,
       "name": "Pawpaw",
-      "description": "The pawpaw tree has smooth gray bark, but becomes scaly overtime. Pawpaws grow in clusters that resemble bananas, are high in vitamin C and healthy fats, and can be eaten raw.",
+      "description": "The pawpaw tree has smooth gray bark, but becomes scaly overtime. Pawpaws grow in clusters that resemble bananas, are high in vitamin C and healthy fats, and can be eaten raw. They flourish from August through October.",
       "location": "All counties except in high elevations.",
-      "URL": "https://www.gardenia.net/wp-content/uploads/2023/05/asimina-triloba.webp"
+      "URL": "https://growitbuildit.com/wp-content/uploads/2023/07/Pawpaw-cluster-2.jpg"
     },
     {
       "id": 2,
       "name": "Dandelion",
-      "description": "With long pointy leaves, and bright yellowish orange flowers, this planted is sought after as an addition to salads or for tea. It is Abundant in vitamin A, vitamin C, and vitamin K. As well as being known for maintaining good vision and immune function. ",
+      "description": "With long pointy leaves, and bright yellowish orange flowers, this planted is sought after as an addition to salads or for tea. It is Abundant in vitamin A, vitamin C, and vitamin K. As well as being known for maintaining good vision and immune function. They flourish from May to October.",
       "location": "Every county",
-      "URL": "https://www.birdsandblooms.com/wp-content/uploads/2023/02/GettyImages-145629450.jpg"
+      "URL": "https://baynature.org/wp-content/uploads/2021/11/viridi-green-i-uBAOo_BBA-unsplash.jpg"
     },
     {
       "id": 3,
       "name": "Wood Sorrel",
-      "description": "Growing up to 10 inches tall, this heart-shaped leafleted, tiny yellow flowered, plant is a wonderful zesty treat. It is high an vitamin C and can help with nausea, fever, indigestion, and swelling.",
+      "description": "Growing up to 10 inches tall, this heart-shaped leafleted, tiny yellow flowered, plant is a wonderful zesty treat. It is high an vitamin C and can help with nausea, fever, indigestion, and swelling. They flourish from mid-June to mid-July.",
       "location": "Every county",
       "URL": "https://lh6.googleusercontent.com/proxy/WYV6CPsoxdn74HJV85x0vEfSGtv8Px_vZ4W3EhLXPxa1JR899MXgh0cZ6hYJ--iNU7vXMs1QG_oycTPq5agb0GTrxjuMCmCTooWYCCQ1YFoZlht_CvoMCRHBEJ7aoelLej0"
     },
     {
       "id": 4,
       "name": "Morels",
-      "description": "This small and unique mushroom is a highly sought after ingredient for many dishes. With a hollow stem and cap, this fungi is great for it's anti-oxidative abilities, anti-inflammation, and gut health preservation. While it is edible, it must be cooked before eaten.",
+      "description": "This small and unique mushroom is a highly sought after ingredient for many dishes. With a hollow stem and cap, this fungi is great for it's anti-oxidative abilities, anti-inflammation, and gut health preservation. While it is edible, it must be cooked before eaten. They flourish from April through May.",
       "location": "More prevalent in high elevation counties",
-      "URL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FzqpDdny1pABhk8JgWnWTLkq8fwciJCeWrEekZbxlszuBlHSh5Tc0wvoCW85ZRuCeiY&usqp=CAU"
+      "URL": "https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/im_landscape_100/public/2023-04/morel-mushrooms.jpg.webp?itok=erPDf-Zw"
     },
     {
       "id": 5,
       "name": "Serviceberries",
-      "description": "The tree that these berries grow on can be found while hiking, or even around your neighborhood library. With smooth, gray bark, star-shaped white flowers,and small red berries, this sweet treat is sought after as a healthy snack or added to sweet treats. It is great to have on hand for it's notable iron amounts. ",
+      "description": "The tree that these berries grow on can be found while hiking, or even around your neighborhood library. With smooth, gray bark, star-shaped white flowers,and small red berries, this sweet treat is sought after as a healthy snack or added to sweet treats. It is great to have on hand for it's notable iron amounts. They flourish in late June or July.",
       "location": "Every county",
       "URL": "https://images.squarespace-cdn.com/content/v1/55fc413fe4b051db9c8fd36a/1545597479577-QBAS7HIX8OBAZKWOMLLM/service-4.JPG"
+    },
+    {
+      "id": 6,
+      "name": "Ramps",
+      "description": "This wild onion has broad and smooth, light green leaves that can grow to be 8 inches long. They have a strong garlicky-onion flavor and can be eaten raw. They are known for being delicious, as well as their anti-bacterial and antiviral qualities. They flourish from March to early May.",
+      "location": "Every county",
+      "URL": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/wild-west-virginia-ramps-angela-lizotte.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Elderberries",
+      "description": "This delicious berry grows in the form of a clump-like shrub that ranges from 8 to 10 feet high. Only being edible once cooked, it is rich in vitamins, minerals and antioxidant compounds, while having anti-inflammatory and antibacterial properties. They flourish from August through September.",
+      "location": "Every county",
+      "URL": "https://www.coldclimategardening.com/wp-content/uploads/3861843057_e44f500f87_b.jpg"
     }
   ],
   "deadlyPlants": [
@@ -81,21 +115,21 @@
       "name": "Rhododendron",
       "description": "Growing up to 40 ft tall, this plant has dark green leaves, which are different shades on either side, surrounding clusters of 10-12 small white or pink flowers. Symptoms of leaf or honey consumption include hallucinations, diarrhea and death in severe cases.",
       "location": "Every county, but more prone to mountainous regions",
-      "URL": "https://i.pinimg.com/736x/a2/be/46/a2be46ef143ab57614cd19457f2a86f9.jpg"
+      "URL": "https://www.statesymbolsusa.org/sites/default/files/primary-images/rhododendronWVstateflower.jpg"
     },
     {
       "id": 3,
       "name": "Holly",
       "description": "Standing at 10-20 ft tall with small red berries matched with small and pointy dark green leaves, these bushes are perfect for the holiday season, but not for any stew. Symptoms of berry consumption include: vomiting, diarrhea, and dehydration",
       "location": "Fayette, Grant, Greenbrier, Hardy, Mercer, Monongalia, Nicholas, Pendleton, Pocahontas, Preston , Raleigh , Randolph , Summers, Tucker, and Webster.",
-      "URL": "https://survivalfreedom.com/wp-content/uploads/2019/12/Holly-Berries-on-Bush.jpg.webp"
+      "URL": "https://www.thetreecenter.com/c/uploads/2019/01/Holly_Tree_1-copy-jpg.webp"
     },
     {
       "id": 4,
       "name": "Jimsonweed",
       "description": "Ranging from 3-5 ft tall with thick purple stems and large, white to purple flowers, this plant is part of the nightshade family. Symptoms of petal or nectar consumption include: rapid pulse and breathing, dilated pupils, restlessness, nervousness, muscular twitching, diarrhea, depression and weight loss. In severe cases, it is fatal.",
       "location": "Every County",
-      "URL": "https://cdn.mos.cms.futurecdn.net/UXyEb5iDNGcpv8ekmf9Fdh-1200-80.jpg"
+      "URL": "https://www.clemson.edu/cafls/research/weeds/weed-id-bio/broadleaf-weeds-parent/broadleaf-pages-pictures/jimsonweed.jpg"
     },
     {
       "id": 5,
@@ -103,77 +137,73 @@
       "description": "Growing upwards of 20 ft, in a spiral fashion around trees, this vine and it's fruit are very similar to grapes. Every part of this plant is toxic and can inhibit muscle movement, as well as be fatal in severe cases.",
       "location": "Every county",
       "URL": "https://objects.liquidweb.services/images/202110/inat_1634001860-6164e873c6741.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Bulbous Buttercup",
+      "description": "Ranging in height from 6-12 inches, this flower brings back joyous childhood memories of. While not being listed as lethal to humans, it is still not safe to consume. If chewed, blisters would appear on the lips an face.. If swallowed, the symptoms are abdominal pain, diarrhea and vomiting, dizziness and even paralysis.",
+      "location": "Every county",
+      "URL": "https://warehouse1.indicia.org.uk/upload/14/63/80/o_1aj8snerp11m5kjtio3ds41nnpc.jpg"
+    },
+    {
+      "id": 7,
+      "name": "American Yew",
+      "description": "Growing from 3-5 feet tall, this shrub is toxic from the roots to the needles. Ingestion of any part of this plant can cause an altered mental status, blue-colored lips, breathing difficulty, Coma, convulsions, Diarrhea, dizziness and enlarged pupils.",
+      "location": "Every county",
+      "URL": "https://qph.cf2.quoracdn.net/main-qimg-bdb00b903877cb2a70124413c2f558f8"
     }
   ],
   "userSafePlants": [
     {
-      "id": 1,
-      "userId": "",
-      "safeId": "",
-      "notes": ""
-    },
-    {
       "userId": 4,
-      "safeId": 1,
-      "notes": " ",
+      "safePlantId": 5,
+      "notes": "wow!!",
       "id": 2
     },
     {
       "userId": 4,
-      "safeId": 1,
+      "safePlantId": 1,
       "notes": " ",
       "id": 3
     },
     {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 4
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
+      "userId": 7,
+      "safePlantId": 1,
+      "notes": " so good!",
       "id": 5
     },
     {
-      "userId": 4,
-      "safeId": 1,
+      "userId": 9,
+      "safePlantId": 1,
       "notes": " ",
       "id": 6
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 7
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 8
-    },
-    {
-      "userId": 4,
-      "safeId": 1,
-      "notes": " ",
-      "id": 9
     }
   ],
   "userDeadlyPlants": [
     {
-      "id": 1,
-      "userId": "",
-      "safeId": "",
-      "notes": ""
+      "userId": 4,
+      "deadlyPlantId": 1,
+      "notes": "hello",
+      "id": 2
+    },
+    {
+      "userId": 7,
+      "deadlyPlantId": 1,
+      "notes": " ",
+      "id": 3
+    },
+    {
+      "userId": 10,
+      "deadlyPlantId": 1,
+      "notes": " ",
+      "id": 4
     }
   ],
   "messages": [
     {
       "id": 1,
       "userId": 2,
-      "text": "What's up plant lovers?",
+      "text": "What is up plant lovers?",
       "timestamp": "2024-06-18T17:24"
     },
     {
@@ -189,12 +219,6 @@
       "timestamp": "2024-05-13T11:12"
     },
     {
-      "id": 4,
-      "userId": 1,
-      "text": "",
-      "timestamp": "2024-01-28T17:01"
-    },
-    {
       "id": 5,
       "userId": 3,
       "text": "Anyone else see the disclaimer for the West Virginia Mushroom Club?...",
@@ -205,17 +229,63 @@
       "userId": 5,
       "text": "How did I get here?",
       "timestamp": "2024-06-19T01:25"
-    }
-  ],
-  "posts": [
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "text": "This hot weather... I'm wilting!  ;(",
+      "user": {
+        "id": 4,
+        "username": "bLeaf",
+        "email": "brooks@gmail.com"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "text": "Did you see the post on silver vine?!",
+      "timestamp": "2024-05-13T11:12"
+    },
+    {
+      "id": 8,
+      "userId": 6,
+      "text": "Can we just get rid of poison ivy?",
+      "timestamp": "2024-05-13T11:12"
+    },
+    {
+      "id": 9,
+      "userId": 5,
+      "text": "I don't remember where, but I did see that page!",
+      "timestamp": "2024-06-19T01:25"
+    },
     {
       "id": 1,
-      "userId": "",
-      "description": "",
-      "imageUrl": "",
-      "timestamp": ""
+      "userId": 2,
+      "text": "Wood sorrel is too good...",
+      "timestamp": "2024-06-18T17:24"
+    },
+    {
+      "userId": 8,
+      "text": "oh my...",
+      "id": 10,
+      "user": {
+        "email": "test@gmail.com",
+        "username": "test",
+        "id": 8
+      }
+    },
+    {
+      "userId": 10,
+      "text": ":)",
+      "id": 11,
+      "user": {
+        "email": "bee@gmail.com",
+        "username": "Abee",
+        "id": 10
+      }
     }
   ],
+  "posts": [],
   "parks": [
     {
       "id": 1,
@@ -226,40 +296,34 @@
     {
       "id": 2,
       "name": "BlackWater Falls",
-      "description": "is named for the falls of the Blackwater River, whose amber-colored waters plunge five stories then twist and tumble through an eight-mile long gorge. The “black” water is a result of tannic acid from fallen hemlock and red spruce needles. Campers visiting the park can enjoy activities like hiking, biking, fishing and so much more.",
       "imageUrl": "https://wvstateparks.com/wp-content/uploads/2019/04/Summer_1-700x467.jpg"
     },
     {
       "id": 3,
       "name": "Greenbrier State Forest",
-      "description": "Located in the southeastern corner of the state, near the border of Virginia, Greenbrier State Forest encompasses 5,100 acres of forested, mountainous terrain. Perfect for campers who enjoy hitting the trails via bike or hike.",
       "imageUrl": "https://wvstateparks.com/wp-content/uploads/2017/03/AA_21B_6852694_2279178736_6.jpg"
     },
     {
       "id": 4,
       "name": "Little Beaver State Park",
-      "description": " At the center of the park is an 18-acre lake where anglers may fish year-round. Nearly 20 miles of trails challenge hikers, while picnic areas are perfect for family get-togethers and reunions.",
       "imageUrl": "https://champagne-tastes.com/wp-content/uploads/2022/06/little-beaver-small-12.jpg"
     },
     {
       "id": 5,
       "name": "Seneca State Forest",
-      "description": "Seneca State Forest is West Virginia's oldest and largest forest. Surrounded by nature in rugged Pocahontas County, Seneca offers peace and solitude for guests searching for a quiet getaway.",
       "imageUrl": "https://pocahontascountywv.com/wp-content/uploads/2021/04/Seneca-firetower-6.jpeg"
     },
     {
       "id": 6,
       "name": "Twine Falls",
-      "description": "Named after two waterfalls found on park grounds, Twin Falls offers nature lovers 3,776 acres of pure bliss to camp and play. Hike to waterfalls, bike the trails, shoot some hoops at the basketball court and much more at this state park.",
       "imageUrl": "https://www.naturallyamazing.com/americasparks/7231.jpg"
     }
   ],
-  "userParks": [
+  "counties": [
     {
       "id": 1,
-      "parkId": "",
-      "userId": "",
-      "hasVisited": ""
+      "name": "Boone",
+      "parkId": 1
     }
   ]
 }

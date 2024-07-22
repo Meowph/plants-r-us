@@ -1,0 +1,157 @@
+h1 {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+/* WHOLE Chat Box */
+.chat-display{
+  border: 2px solid #01501B;
+  overflow-y: scroll;
+  height: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+  scrollbar-color: #500101;
+  margin: 60px 0 0 0;
+  border-radius: 5px;
+  width: 75%;
+  background: content-box radial-gradient( #aee9e3, #67A268);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px rgb(0, 0, 0); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff5f6;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d4ffdf; 
+}
+
+/* Send Message Button */
+.button{
+  background-color: white;
+  margin: 5px 0 10px;
+  border-radius: 5px;
+  color: #01501b;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.button :hover {
+  border-color: #01501B;
+}
+
+/* What's on your mind? form */
+.send-message-form {
+  margin: 0 20px 0 10px;
+  border: solid 2px#01501b;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+/* Message Boxes*/
+.message{
+  border: 2px solid grey;
+  width: 75%;
+  margin: 5px;
+  height: fit-content;
+  border-radius: 10px;
+  text-align: left;
+  padding-left: 20px;
+  align-self: center;
+  background: white;
+  color: #01501B;
+  box-shadow: 1px 1px 1px 1px;
+  
+}
+
+p{
+  margin: 0;
+}
+
+.chat-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*entire chat area*/
+.chat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 13px;
+  width: 50rem;
+  box-shadow: rgba(1, 255, 192, 0.644) 0px 22px 70px 4px;
+}
+
+/* Edit Button */
+.chat-button{
+  background-color: white;
+  height: 35px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  float: right;
+  margin: 10px;
+  color: #01501b;
+  box-shadow: 1px 1px 1px 1px;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.edit{
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin: 30px;
+  box-shadow: rgb(164, 229, 229) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.send-message-box {
+  box-shadow: rgb(183, 240, 240) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.aref-ruqaa-ink-regular {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-ink-bold {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+

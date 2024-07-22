@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { Register } from "./Register.jsx"
 import "./Login.css"
 import { getUserByEmail } from "../../services/userService,jsx"
 
@@ -23,7 +22,7 @@ export const Login = () => {
           })
         )
 
-        navigate("/")
+        navigate("/home")
       } else {
         window.alert("Invalid login")
       }
@@ -34,10 +33,14 @@ export const Login = () => {
     <main className="container-login">
       <section>
         <form className="form-login" onSubmit={handleLogin}>
-          <h1 style ={{
-            textDecorationLine: "underline"
-          }}>
-           Welcome Back!
+          <img src="../public/images/logo.jpeg" alt="Fern Logo" className="fern-logo"
+          style={{
+            height: '6rem',
+            width: '6rem',
+          }}
+          />
+          <h1>
+           Welcome Explorers To Plants-R-Us!
           </h1>
           <p>(Haven't eaten anything weird lately... have you?)</p>
           <fieldset>
@@ -56,7 +59,7 @@ export const Login = () => {
           <fieldset>
             <div className="form-group">
               <button className="login-btn btn-info" type="submit">
-                Sign in
+                Sign In
               </button>
             </div>
           </fieldset>

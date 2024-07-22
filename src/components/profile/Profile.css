@@ -1,0 +1,116 @@
+{ /* h1, h2 {
+  color: white;
+}
+
+.userPlants-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.plant-section {
+  flex: 1;
+  margin: 50px 30px;
+  border: dashed, #c2f7f2;
+}
+
+.plant-section h2 {
+  text-align: center;
+}
+
+.plant-cards {
+  display: flex;
+  flex-direction: column; /* Keep it column to make it vertical 
+  align-items: center;
+}
+
+.plant-card {
+  width: 350px; /* Maintain width 
+  height: auto; /* Auto height to fit content 
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Keep it column 
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.plant-card img {
+  width: 100%;
+  height: 2px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: unset;
+  bottom: 10px;
+}
+
+.plant-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.plant-card-title, .plant-card-text {
+  margin: 10px 0;
+  width: 100%;
+  text-align: left; /* Align text to the left 
+}
+
+.plant-card-title p, .plant-card-text p {
+  margin: 0;
+}
+
+.plant-card button {
+  align-self: center; /* Center the button 
+  margin-top: 10px;
+} */}
+
+
+.plant-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 115, 0);
+}
+
+
+.plant-card {
+  width: 350px; /* Maintain width */
+  height: auto; /* Auto height to fit content */
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Keep it column */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  
+}
+
+.plant-card img {
+  width: 100%;
+  height: 2px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: unset;
+  bottom: 10px;
+}
+
+.safe-form {
+  padding: 10px 13px 10px 10px;
+  box-shadow: rgb(183, 240, 216) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.deadly-form {
+  padding: 10px 13px 10px 10px;
+  box-shadow: rgb(183, 240, 216) -3px -3px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
