@@ -1,6 +1,14 @@
+body {
+  background: content-box radial-gradient(#aee9e3, #67A268);
+}
+
 .container-login {
-  text-align: center;
-  width: 50em;
+  width: 35em;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 10px;
+  height: 30rem;
 }
 
 .container-login > section > a {
@@ -8,9 +16,15 @@
   color: var(--secondary);
 }
 
+/*Login in container*/
 .form-login {
   width: 60%;
-  width: 25em
+  width: 25em;
+  background-color: white;
+}
+
+.fern-logo {
+  border-radius: 100px;
 }
 
 .form-login > h1 {
@@ -42,11 +56,10 @@
 /************* FORM STYLES *************/
 
 form {
-  margin: 3rem 5rem;
-  border: 1px solid var(--outline);
+  margin: 3rem 5rem 3rem 5rem;
   border-radius: 10px;
   padding: 1rem 0rem 0rem 1rem;
-  box-shadow: 1px 2px 5px lightgray;
+  box-shadow: 3px 5px 3px #494747;
   background-color: var(--offWhite);
 }
 
@@ -82,6 +95,11 @@ fieldset {
   outline-offset: 2px;
 }
 
+/*Register Container*/
 .register-link {
-  margin-right: 13rem;
+  border: 1px solid var(--outline);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 3px 5px 3px #494747;
+  background-color: white;
 }

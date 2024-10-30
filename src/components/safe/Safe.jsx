@@ -1,72 +1,65 @@
-import { useNavigate } from "react-router-dom"
 import { 
   Button,
   ButtonGroup,
     Card, 
     CardBody, 
-    CardImg, 
-    CardText, 
-    CardTitle 
+    CardImg,
+    CardText,
+    Col,
 } from "reactstrap"
-import "./Safe.css"
 import { AddPlantToProfile } from "../../services/profileService.jsx"
-import { useState } from "react"
-// import { Navigate } from "react-router-dom"
 
 // Displays individual Safe Plant details
 export const SafePlant = ({ plant, user }) => {
 
-  const [userSafePlants, setUserSafePlants] = useState({ })
-
-  const Navigate = useNavigate()
-  
-
-  const handleAddClick = (event) => {
-    event.preventDefault()
+  const handleAddClick = () => {
     const plantToPost= {
       userId: user.id,
-      safeId: plant.id,
+      safePlantId: plant.id,
       notes: " "
     }
-      AddPlantToProfile(plantToPost).then(() => {
-        Navigate(`/profile/${user.id}`);
-      })
+      AddPlantToProfile(plantToPost)
+      //   Navigate(`/profile/${user.id}`);
     }
 
-
-    
-  return (
-      <Card>
-          {/*Displays plant image */} 
-          <CardImg className="safePlant-img" 
-        src={plant.URL}
-        alt={plant.name}
-        style={{
-          height: 180
-        }}
-        top
-        width="100%"
-        />
-        <ButtonGroup>
-          <Button
-            color="primary"
-            outline
-            onClick={handleAddClick}
-          >
-            Add
-            </Button>
-            </ButtonGroup>
-        <CardBody className="body">
-        <CardTitle>
-        <p>Name:</p>{plant.name}
-        <br></br>
-        <p>Description:</p>{plant.description}
-        <br></br>
-        <p>Location:</p>{plant.location}
-        <br></br>
-        </CardTitle>
+    return (
+      <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px' }}>
         
-            </CardBody>
-    </Card>
-  )
-}
+        {/* Displays plant image */}
+        <Col md="4" style={{ padding: 0 }}>
+          <CardImg
+            className="safePlant-img"
+            src={plant.URL}
+            alt={plant.name}
+            style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+          />
+        </Col>
+        <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
+          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3' }}>
+            <div style={{ flex: 1 }}>
+              <CardText>
+                <p><b>Name:</b> {plant.name}</p>
+              </CardText>
+              <CardText>
+                <p><b>Description:</b> {plant.description}</p>
+              </CardText>
+              <CardText>
+                <p><b>Location:</b> {plant.location}</p>
+              </CardText>
+            </div>
+            <div style={{ marginTop: 'auto' }}>
+              <ButtonGroup>
+                <Button
+                  color="success"
+                  outline
+                  onClick={handleAddClick}
+                >
+                  Add
+                </Button>
+              </ButtonGroup>
+            </div>
+          </CardBody>
+        </Col>
+      </Card>
+    )
+  }

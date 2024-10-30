@@ -1,63 +1,66 @@
-// import { useNavigate } from "react-router-dom"
 import { 
+  ButtonGroup,
+  Button,
   Card, 
   CardBody, 
-  CardImg, 
-  CardText, 
-  CardTitle 
+  CardImg,
+  Col,
+  CardText
 } from "reactstrap"
-import "./Deadly.css"
+import { AddDeadlyPlantToProfile } from "../../services/profileService.jsx"
 
-// Displays individual Safe Plant details
-export const DeadlyPlant = ({ plant }) => {
+// Displays individual Deadly Plant details
+export const DeadlyPlant = ({ plant, currentUser }) => {
 
-  // const Navigate = useNavigate()
+  const handleAddClick = () => {
+    const deadlyPlantToPost= {
+      userId: currentUser.id,
+      deadlyPlantId: plant.id,
+      notes: " "
+    }
+      AddDeadlyPlantToProfile(deadlyPlantToPost)
+    }
+
   
-return (
-    <Card //style={{ 
-  //     width: '20rem',  
-  //     margin: '10px' 
-  //     }}
-      >
-      <CardBody className="body">
-      <CardTitle 
-      // style = {{
-      //     marginBottom:"2rem"
-      // }}
-      >
-      <p>Name:</p>{plant.name}
-      <br></br>
-      <p>Description:</p>{plant.description}
-      <br></br>
-      <p>Location:</p>{plant.location}
-      <br></br>
-      </CardTitle>
-      
-      {/*Displays pant image */} 
-       <CardImg className="deadlyPlant-img" 
-       /* style={{ 
-          height:'13rem',
-          width:'13rem',
-          alignItems:'center'
-      {/* }} */
-      variant="top" 
-      src={plant.URL}
-      alt={plant.name}
-      />
-
-      
-       {/* <CardText style = {{
-          marginTop:"2rem"
-      }}>
-          <a 
-          href=""
-          onClick={() =>{
-              Navigate(`/safe/${plant.id}`)}}
-          >
-              Details
-          </a>
-      </CardText>  */}
-      </CardBody>
-  </Card>
-)
-}
+    return (
+      <Card body style={{ display: 'flex', flexDirection: 'row', minHeight: '400px', minWidth: '200px' }}>
+        {/* Displays plant image */}
+        <Col md="4" style={{ padding: 0 }}>
+          <CardImg
+            className="deadlyPlant-img"
+            src={plant.URL}
+            alt={plant.name}
+            style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+          />
+        </Col>
+        <Col md="8" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>
+          <CardBody className="body" style={{ flex: 1, display: 'flex', flexDirection: 'column', backgroundColor: '#fdf9f3' }}>
+            <div style={{ flex: 1 }}>
+            <CardText>
+              <p><b>Name:</b> {plant.name}</p>
+            </CardText>
+            <CardText>
+              <p><b>Description:</b> {plant.description}</p>
+            </CardText>
+            <CardText>
+              <p><b>Location:</b> {plant.location}</p>
+            </CardText>
+            </div>
+            <div style={{ marginTop: 'auto' }}>
+            <ButtonGroup>
+              <Button
+                color="success"
+                outline
+                onClick={handleAddClick}
+              >
+                Add
+              </Button>
+            </ButtonGroup>
+            </div>
+          </CardBody>
+        </Col>
+      </Card>
+    );
+  };
+  
+  

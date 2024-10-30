@@ -6,10 +6,10 @@ export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({})
 
   useEffect(() => {
-    const localShellUser = localStorage.getItem("activeUser")
-    const shellUserObject = JSON.parse(localShellUser)
+    const localPlantUser = localStorage.getItem("activeUser")
+    const plantUserObject = JSON.parse(localPlantUser)
 
-    setCurrentUser(shellUserObject)
+    setCurrentUser(plantUserObject)
   }, [])
 
   return  (
