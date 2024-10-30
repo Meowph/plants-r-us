@@ -126,12 +126,12 @@ export const Home = () => {
                 <p className="overlay-text"><a href="https://a.co/d/4jOOqOT" target="_blank">The Forager’s Harvest Guide</a></p>
               </div>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <div className="carousel-container">
                 <img className="d-block w-100" src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/6213fdb054cf47e2bf86a0d43869e6f8~tplv-tej9nj120t-origin.webp" alt="The Forager’s Calendar" />
                 <p className="overlay-text"><a href="https://a.co/d/7zHePbG" target="_blank">The Forager’s Calendar</a></p>
               </div>
-            </Carousel.Item>
+            </Carousel.Item> */}
             <Carousel.Item>
               <div className="carousel-container">
                 <img className="d-block w-100" src="https://static1.squarespace.com/static/63a998547127363d0d51d6b3/63a9b23cacbbcc297ed43e9b/64242bfae41fa91b59308a46/1708523238763/E952829A-E2C9-409C-BF6C-5B301E249690?format=1500w" alt="Wild Magic" />
