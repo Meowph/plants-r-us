@@ -29,6 +29,12 @@
       "id": 6,
       "username": "vRoot",
       "email": "barry@gmail.com"
+    },
+    {
+      "email": "jmax@gmail.com",
+      "fullName": "jmax",
+      "isStaff": false,
+      "id": 7
     }
   ],
   "safePlants": [
@@ -159,6 +165,12 @@
       "safeId": 1,
       "notes": " ",
       "id": 9
+    },
+    {
+      "userId": 7,
+      "safeId": 3,
+      "notes": " ",
+      "id": 10
     }
   ],
   "userDeadlyPlants": [
